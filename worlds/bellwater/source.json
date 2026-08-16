@@ -1,0 +1,13 @@
+{
+  "id": "bellwater",
+  "title": "Bellwater",
+  "character": "Mara",
+  "goal": "enter Bellwater",
+  "preferred_path": "new",
+  "task": "Mara wants to enter Bellwater. Based only on the supplied document, tell her what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+  "setting": "Bellwater is a small town built between two slow rivers. Visitors often arrive carrying questions about its customs, because the town keeps two entry traditions and considers both of them proper. The people of Bellwater do not treat one tradition as safer, nobler, or more fashionable than the other. A traveler chooses a custom before setting out and follows it without borrowing pieces from the other.",
+  "history": "The older custom grew around the stone bridge, which was built when the town's first watch house stood beside the oak gate. At dusk, the gatekeeper is ready for travelers who have taken that route. The copper coin is a ceremonial greeting rather than a toll, and the oak gate is opened after the greeting. Families who use this custom say its rhythm makes the town feel connected to its earliest days.",
+  "new_history": "The newer custom arose after a mill was built among the reeds on the eastern bank. Travelers using it cross the reed bridge at dawn, bring a sprig of rosemary to the miller, and enter through the blue gate. The miller keeps the rosemary in a communal basket. Supporters of this custom value its quiet morning beginning, but the town still recognizes the older custom as equally valid.",
+  "path_a": {"label": "older custom", "steps": [{"id":"stone_bridge","text":"Cross the stone bridge at dusk."},{"id":"copper_coin","text":"Give a copper coin to the gatekeeper."},{"id":"oak_gate","text":"Enter through the oak gate."}]},
+  "path_b": {"label": "newer custom", "steps": [{"id":"reed_bridge","text":"Cross the reed bridge at dawn."},{"id":"rosemary","text":"Give a sprig of rosemary to the miller."},{"id":"blue_gate","text":"Enter through the blue gate."}]}
+}

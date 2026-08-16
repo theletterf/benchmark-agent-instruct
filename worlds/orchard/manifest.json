@@ -1,0 +1,40 @@
+{
+  "world": "orchard",
+  "preferred_path": "old",
+  "old_path": [
+    "eastern_ladder",
+    "silver_basket",
+    "noon_bell"
+  ],
+  "new_path": [
+    "western_ladder",
+    "linen_sling",
+    "evening_whistle"
+  ],
+  "conditions": {
+    "A": {
+      "recommendation": true,
+      "facts": true
+    },
+    "B": {
+      "recommendation": true,
+      "facts": true
+    },
+    "C": {
+      "recommendation": true,
+      "facts": true
+    },
+    "D": {
+      "recommendation": true,
+      "facts": true
+    },
+    "E": {
+      "recommendation": false,
+      "facts": true
+    },
+    "F": {
+      "recommendation": true,
+      "facts": true
+    }
+  }
+}

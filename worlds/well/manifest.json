@@ -1,0 +1,40 @@
+{
+  "world": "well",
+  "preferred_path": "new",
+  "old_path": [
+    "iron_bucket",
+    "three_turns",
+    "black_basin"
+  ],
+  "new_path": [
+    "clay_jar",
+    "five_turns",
+    "white_basin"
+  ],
+  "conditions": {
+    "A": {
+      "recommendation": true,
+      "facts": true
+    },
+    "B": {
+      "recommendation": true,
+      "facts": true
+    },
+    "C": {
+      "recommendation": true,
+      "facts": true
+    },
+    "D": {
+      "recommendation": true,
+      "facts": true
+    },
+    "E": {
+      "recommendation": false,
+      "facts": true
+    },
+    "F": {
+      "recommendation": true,
+      "facts": true
+    }
+  }
+}

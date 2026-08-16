@@ -1,0 +1,40 @@
+{
+  "world": "bellwater",
+  "preferred_path": "new",
+  "old_path": [
+    "stone_bridge",
+    "copper_coin",
+    "oak_gate"
+  ],
+  "new_path": [
+    "reed_bridge",
+    "rosemary",
+    "blue_gate"
+  ],
+  "conditions": {
+    "A": {
+      "recommendation": true,
+      "facts": true
+    },
+    "B": {
+      "recommendation": true,
+      "facts": true
+    },
+    "C": {
+      "recommendation": true,
+      "facts": true
+    },
+    "D": {
+      "recommendation": true,
+      "facts": true
+    },
+    "E": {
+      "recommendation": false,
+      "facts": true
+    },
+    "F": {
+      "recommendation": true,
+      "facts": true
+    }
+  }
+}

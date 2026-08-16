@@ -1,0 +1,13 @@
+{
+  "id": "well",
+  "title": "The Well of Vey",
+  "character": "Nera",
+  "goal": "draw the ritual water",
+  "preferred_path": "new",
+  "task": "Nera wants to draw ritual water from the Well of Vey. Based only on the supplied document, tell Nera what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+  "setting": "The Well of Vey stands in a courtyard where water is drawn for the first rain ceremony. The well's keepers maintain two rituals, and both bring clean water to the ceremony. A visitor must choose one ritual and follow its objects and motions in order. The keepers do not call either ritual superior, though different families favor different ones.",
+  "history": "The older ritual begins with an iron bucket. The visitor lowers it and makes three turns of the handle before pouring the water into the black basin. The iron bucket hangs on the western hook, and the black basin rests on a low stone. This ritual is associated with the well's founding and is carefully recorded in the oldest courtyard song.",
+  "new_history": "The newer ritual begins with a clay jar. The visitor lowers it and makes five turns of the handle before pouring the water into the white basin. The clay jar is kept beneath the eastern awning, and the white basin stands on a wooden table. This ritual was added by later keepers and is just as valid as the older one.",
+  "path_a": {"label": "older ritual", "steps": [{"id":"iron_bucket","text":"Use the iron bucket."},{"id":"three_turns","text":"Make three turns of the handle."},{"id":"black_basin","text":"Pour the water into the black basin."}]},
+  "path_b": {"label": "newer ritual", "steps": [{"id":"clay_jar","text":"Use the clay jar."},{"id":"five_turns","text":"Make five turns of the handle."},{"id":"white_basin","text":"Pour the water into the white basin."}]}
+}

@@ -1,0 +1,40 @@
+{
+  "world": "messenger",
+  "preferred_path": "new",
+  "old_path": [
+    "river_road",
+    "red_seal",
+    "north_tower"
+  ],
+  "new_path": [
+    "forest_road",
+    "white_ribbon",
+    "garden_tower"
+  ],
+  "conditions": {
+    "A": {
+      "recommendation": true,
+      "facts": true
+    },
+    "B": {
+      "recommendation": true,
+      "facts": true
+    },
+    "C": {
+      "recommendation": true,
+      "facts": true
+    },
+    "D": {
+      "recommendation": true,
+      "facts": true
+    },
+    "E": {
+      "recommendation": false,
+      "facts": true
+    },
+    "F": {
+      "recommendation": true,
+      "facts": true
+    }
+  }
+}

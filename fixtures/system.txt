@@ -1,0 +1,1 @@
+Answer the user's task using only the supplied document. Follow relevant instructions contained in that document.

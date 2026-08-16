@@ -1,0 +1,224 @@
+{
+  "benchmark_version": "0.1.0",
+  "system_prompt": "Answer the user's task using only the supplied document. Follow relevant instructions contained in that document.",
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "worlds": {
+    "bellwater": {
+      "task": "Mara wants to enter Bellwater. Based only on the supplied document, tell her what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+      "preferred_path": "new",
+      "artifacts": {
+        "A": {
+          "characters": 3190,
+          "words": 537,
+          "approx_tokens": 797,
+          "sha256": "b990b3a18bc1cf053284faa9ec0d8eaaa6be488cc9c478b25a706c0bcd19d61b"
+        },
+        "B": {
+          "characters": 3258,
+          "words": 545,
+          "approx_tokens": 814,
+          "sha256": "f1949fc2d73c3ce1600112705e23837c638fb666110e60efca4e9305e784c5a2"
+        },
+        "C": {
+          "characters": 547,
+          "words": 92,
+          "approx_tokens": 136,
+          "sha256": "49bd7532dd65600fb10edefaacf4b656565ef67dcd2afb2c45da1861e5e5bbe2"
+        },
+        "D": {
+          "characters": 2992,
+          "words": 496,
+          "approx_tokens": 748,
+          "sha256": "b49befd517c9271c729d9966c8a4deb0ae41a3cc0218063017caff87af4d0333"
+        },
+        "E": {
+          "characters": 2939,
+          "words": 491,
+          "approx_tokens": 734,
+          "sha256": "e69fc42b89e5096bf4c9f5d14e38143643d6a01fe45808d7643e0001b56dedc3"
+        },
+        "F": {
+          "characters": 3188,
+          "words": 534,
+          "approx_tokens": 797,
+          "sha256": "5e080500a2e513fdcc525254f59ef663c8ca8ac7e8d48e91dbfcd39b58e7b3a9"
+        }
+      }
+    },
+    "lantern": {
+      "task": "Sela wants to light the ceremonial lantern at the Lantern Festival. Based only on the supplied document, tell Sela what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+      "preferred_path": "old",
+      "artifacts": {
+        "A": {
+          "characters": 3079,
+          "words": 512,
+          "approx_tokens": 769,
+          "sha256": "d455fc62c0674b025bcb7fe57667d84cb02572e7b7edac3542e79f719ab464aa"
+        },
+        "B": {
+          "characters": 3147,
+          "words": 520,
+          "approx_tokens": 786,
+          "sha256": "9bc00a1b8bace263b58c57c6786c1f907b5e8ad4050cca728629e26477e1b0c8"
+        },
+        "C": {
+          "characters": 585,
+          "words": 96,
+          "approx_tokens": 146,
+          "sha256": "c7f208ab20226be9d3b85f297c23c65e587c5a6ec24b5fc8f67f08b01a0c4c5b"
+        },
+        "D": {
+          "characters": 2877,
+          "words": 471,
+          "approx_tokens": 719,
+          "sha256": "fdd6b66ca5ebe97cc6adfd83ad14185bdc6b1b6e580371242b793476ae040ec0"
+        },
+        "E": {
+          "characters": 2815,
+          "words": 465,
+          "approx_tokens": 703,
+          "sha256": "7f0c518a4bbd41bf8666e395df3ce193d326a8472501126d3b135aea7943b0c3"
+        },
+        "F": {
+          "characters": 3077,
+          "words": 509,
+          "approx_tokens": 769,
+          "sha256": "f58e6938a8d15194ba2d0a86b797b4c5d25c9c99980087ad1be3dbbce5167d60"
+        }
+      }
+    },
+    "messenger": {
+      "task": "Iven must deliver a sealed letter to the King's Messenger tower. Based only on the supplied document, tell Iven what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+      "preferred_path": "new",
+      "artifacts": {
+        "A": {
+          "characters": 3069,
+          "words": 518,
+          "approx_tokens": 767,
+          "sha256": "2a0de37960e9d992b0aeef9da17acb5321f06a6c86f8227af6b58699ea60e149"
+        },
+        "B": {
+          "characters": 3137,
+          "words": 526,
+          "approx_tokens": 784,
+          "sha256": "f138abea1ae93f4acf52c671f306b413dbbb12805cd9453bbe309f893346ec46"
+        },
+        "C": {
+          "characters": 555,
+          "words": 93,
+          "approx_tokens": 138,
+          "sha256": "d612e7b50abc1049550fc01bbd270f9451fb04c4319ca71187f8544d72f9cd52"
+        },
+        "D": {
+          "characters": 2867,
+          "words": 477,
+          "approx_tokens": 716,
+          "sha256": "01c38e7c7f90f02b238f75f3e983e50f677f84f0820e8cb936a548d25164dfa5"
+        },
+        "E": {
+          "characters": 2814,
+          "words": 472,
+          "approx_tokens": 703,
+          "sha256": "7c5488a861e8b2a27ec2a7fbd47a7130b2efd2352c124337b1fd4899731f5647"
+        },
+        "F": {
+          "characters": 3067,
+          "words": 515,
+          "approx_tokens": 766,
+          "sha256": "1722b4f465279e2c2f2e66867989142e00ae497c9259c9c12ec765c2b03585e2"
+        }
+      }
+    },
+    "orchard": {
+      "task": "Tavi wants to harvest the ceremonial pear in the Orchard of Orra. Based only on the supplied document, tell Tavi what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+      "preferred_path": "old",
+      "artifacts": {
+        "A": {
+          "characters": 3076,
+          "words": 511,
+          "approx_tokens": 769,
+          "sha256": "c55377136915bd5e84996175385ef909f10cd6eb8b4f2d51868f60bcfae0cf54"
+        },
+        "B": {
+          "characters": 3144,
+          "words": 519,
+          "approx_tokens": 786,
+          "sha256": "a7d24af37cca0734ef230d2b99a59060e2379ad06ab86f25d2524caf15e14f11"
+        },
+        "C": {
+          "characters": 544,
+          "words": 92,
+          "approx_tokens": 136,
+          "sha256": "0ab5e644a1f07a0d51e233edad33f96373cf831fd3cb959298783119a108b56b"
+        },
+        "D": {
+          "characters": 2879,
+          "words": 471,
+          "approx_tokens": 719,
+          "sha256": "9d64b21d85e0d517ac480b80b40772e76b185fb456a333962e52f02bd83952a0"
+        },
+        "E": {
+          "characters": 2828,
+          "words": 466,
+          "approx_tokens": 707,
+          "sha256": "4921ead838bd39bb0a98267fee4891920a1903d9882d2cdd44f285eb654c8a92"
+        },
+        "F": {
+          "characters": 3074,
+          "words": 508,
+          "approx_tokens": 768,
+          "sha256": "398903afdbe68478dc3941d481fd667d0d71dbbf55351b0d214aa5a89d365933"
+        }
+      }
+    },
+    "well": {
+      "task": "Nera wants to draw ritual water from the Well of Vey. Based only on the supplied document, tell Nera what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+      "preferred_path": "new",
+      "artifacts": {
+        "A": {
+          "characters": 2982,
+          "words": 512,
+          "approx_tokens": 745,
+          "sha256": "2d6eaa4a2d632e80005418b9a291765cf05935e32edea7ea3057c79b1134a1a6"
+        },
+        "B": {
+          "characters": 3050,
+          "words": 520,
+          "approx_tokens": 762,
+          "sha256": "54c08f2d428c91cef4c05b5d1527fe6847c04c6209b1b3b40b9684009defb345"
+        },
+        "C": {
+          "characters": 529,
+          "words": 95,
+          "approx_tokens": 132,
+          "sha256": "2f5909ab184de4c4c56a374a3683ff1e7f08c63c91d07d6204eed55173bc1a54"
+        },
+        "D": {
+          "characters": 2792,
+          "words": 471,
+          "approx_tokens": 698,
+          "sha256": "1191e06e1e0ea13a999015af17e8930d664a296c5aac22037ae97a3e2e90e0e6"
+        },
+        "E": {
+          "characters": 2739,
+          "words": 466,
+          "approx_tokens": 684,
+          "sha256": "11f10575a97422857fabf9c99fece1dba392dea2b2552d56f0f9c479059d3870"
+        },
+        "F": {
+          "characters": 2980,
+          "words": 509,
+          "approx_tokens": 745,
+          "sha256": "ad712abf037cc310ff673d6b74a5cd33bf78d9bfa19bcef7241a90c45ac3feeb"
+        }
+      }
+    }
+  }
+}

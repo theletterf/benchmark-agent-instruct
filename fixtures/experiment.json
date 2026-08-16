@@ -1,0 +1,12 @@
+{
+  "benchmark_version": "0.1.0",
+  "conditions": ["A", "B", "C", "D", "E", "F"],
+  "default_runs": 20,
+  "hypotheses": {
+    "H1": "A and B select the preferred path more often than E.",
+    "H2": "A and/or B select the preferred path more often than D.",
+    "H3": "A selects the preferred path more often than F.",
+    "H4": "C preserves compliance relative to B while using fewer tokens.",
+    "H5": "World correctness remains high across conditions."
+  }
+}

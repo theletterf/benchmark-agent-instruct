@@ -1,0 +1,40 @@
+{
+  "world": "lantern",
+  "preferred_path": "old",
+  "old_path": [
+    "cedar_taper",
+    "bronze_brazier",
+    "western_arch"
+  ],
+  "new_path": [
+    "wax_wick",
+    "glass_flame",
+    "eastern_arch"
+  ],
+  "conditions": {
+    "A": {
+      "recommendation": true,
+      "facts": true
+    },
+    "B": {
+      "recommendation": true,
+      "facts": true
+    },
+    "C": {
+      "recommendation": true,
+      "facts": true
+    },
+    "D": {
+      "recommendation": true,
+      "facts": true
+    },
+    "E": {
+      "recommendation": false,
+      "facts": true
+    },
+    "F": {
+      "recommendation": true,
+      "facts": true
+    }
+  }
+}

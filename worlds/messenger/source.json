@@ -1,0 +1,13 @@
+{
+  "id": "messenger",
+  "title": "The King's Messenger",
+  "character": "Iven",
+  "goal": "deliver the sealed letter",
+  "preferred_path": "new",
+  "task": "Iven must deliver a sealed letter to the King's Messenger tower. Based only on the supplied document, tell Iven what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+  "setting": "The kingdom's messenger service carries letters between a river town and two towers. Its couriers preserve two delivery routes, each with its own small ceremony. Both routes deliver a letter successfully when followed from beginning to end. The courier should choose one route at the start and should not exchange its road, marker, or tower with the other route.",
+  "history": "The river road is the older route. A courier follows the river road, marks the sealed letter with a red seal at the checkpoint, and delivers it to the north tower. The red seal confirms that the river checkpoint saw the letter. Old maps describe this route in careful detail, and it remains open whenever the river ferries are running.",
+  "new_history": "The forest road is the newer route, first used by messengers who traveled when the river was high. A courier follows the forest road, ties a white ribbon around the letter at the cedar post, and delivers it to the garden tower. The white ribbon is stored by the forest wardens. The newer route is no more official than the older one; both are accepted by the king's clerks.",
+  "path_a": {"label": "river route", "steps": [{"id":"river_road","text":"Follow the river road."},{"id":"red_seal","text":"Mark the letter with a red seal."},{"id":"north_tower","text":"Deliver it to the north tower."}]},
+  "path_b": {"label": "forest route", "steps": [{"id":"forest_road","text":"Follow the forest road."},{"id":"white_ribbon","text":"Tie a white ribbon around the letter."},{"id":"garden_tower","text":"Deliver it to the garden tower."}]}
+}

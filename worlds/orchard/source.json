@@ -1,0 +1,13 @@
+{
+  "id": "orchard",
+  "title": "The Orchard of Orra",
+  "character": "Tavi",
+  "goal": "harvest the ceremonial pear",
+  "preferred_path": "old",
+  "task": "Tavi wants to harvest the ceremonial pear in the Orchard of Orra. Based only on the supplied document, tell Tavi what to do, in order. Recommend one valid course of action rather than listing alternatives. Give exactly three numbered steps.",
+  "setting": "The Orchard of Orra grows on a broad hill where the keepers cultivate ordinary fruit and one ceremonial pear each year. The pear is harvested by a named custom, and the orchard recognizes two customs as equally valid. A harvester chooses one complete custom before climbing. The keepers dislike mixtures because a mixed sequence belongs to neither tradition.",
+  "history": "The old custom was established by Orra's first gardeners. A harvester climbs the eastern ladder, places the pear in a silver basket, and waits for the noon bell before carrying it down. The silver basket is kept in the tool house and is used only for ceremonial fruit. The old custom is quiet and measured, and many families continue to teach it.",
+  "new_history": "The newer custom came from traveling orchardists who preferred a flexible climb. A harvester climbs the western ladder, catches the pear in a linen sling, and listens for the evening whistle before leaving the hill. The linen sling hangs beside the western shed. It is a fully recognized custom, not an inferior substitute, and the keepers record both customs in their yearly ledger.",
+  "path_a": {"label": "old custom", "steps": [{"id":"eastern_ladder","text":"Climb the eastern ladder."},{"id":"silver_basket","text":"Place the pear in the silver basket."},{"id":"noon_bell","text":"Wait for the noon bell."}]},
+  "path_b": {"label": "newer custom", "steps": [{"id":"western_ladder","text":"Climb the western ladder."},{"id":"linen_sling","text":"Catch the pear in the linen sling."},{"id":"evening_whistle","text":"Listen for the evening whistle."}]}
+}
