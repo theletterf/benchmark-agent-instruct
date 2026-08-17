@@ -1,0 +1,7 @@
+{
+  "source_sha256": "f7955ddf225a69537c90b54ab964f83390fd90b9bcf03f9ccbd2ebc9f1423316",
+  "no_section_sha256": "984a337255f6def288676db40beffbd028454dabb7b7c7c048b3543abaf9fe67",
+  "recommended_sha256": "e6e051863d7479ea3685d4a2036aaf1ee2148eac5214a6ca12ef60159b30e40d",
+  "for_ai_agents_sha256": "a9f8cb1fade6ec7c6eae8c40a9916153421a7bc83bd15f94151acdd01f64b2a8",
+  "manipulation": "N to G adds only the generic level-two heading; G to AI changes only its text from `Recommended quickstart` to `For AI agents and LLMs`."
+}

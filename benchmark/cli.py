@@ -13,6 +13,7 @@ from .runner import run_calibration, run_experiment
 from .worlds import world_ids
 from .real_docs.cli import configure_parser as configure_real_docs_parser, handle as handle_real_docs
 from .agent_section.cli import configure_parser as configure_agent_section_parser, handle as handle_agent_section
+from .pinecone_label.cli import configure_parser as configure_pinecone_label_parser, handle as handle_pinecone_label
 
 
 def _experiment_parser(subparsers):
@@ -74,6 +75,8 @@ def build_parser():
     configure_real_docs_parser(real_docs)
     agent_section = sub.add_parser("agent-section", help="Phase 3 normal docs vs the same docs plus For agents")
     configure_agent_section_parser(agent_section)
+    pinecone_label = sub.add_parser("pinecone-label", help="Phase 4 Pinecone AI-heading label replication")
+    configure_pinecone_label_parser(pinecone_label)
     return parser
 
 
@@ -97,6 +100,8 @@ def main(argv=None):
     args = build_parser().parse_args(argv)
     if args.command == "agent-section":
         return handle_agent_section(args)
+    if args.command == "pinecone-label":
+        return handle_pinecone_label(args)
     if args.command == "real-docs":
         return handle_real_docs(args)
     if args.command == "experiments":

@@ -1,0 +1,11 @@
+{
+  "project": "pinecone-label",
+  "retrieval_date": "2026-08-17",
+  "sources": [{
+    "id": "pinecone-quickstart",
+    "title": "Quickstart - Pinecone Docs",
+    "url": "https://docs.pinecone.io/guides/get-started/quickstart",
+    "snapshot": "pinecone-quickstart.html",
+    "sha256": "f7955ddf225a69537c90b54ab964f83390fd90b9bcf03f9ccbd2ebc9f1423316"
+  }]
+}
