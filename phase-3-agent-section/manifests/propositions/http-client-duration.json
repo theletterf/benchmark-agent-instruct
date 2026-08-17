@@ -1,0 +1,40 @@
+{
+  "task": "http-client-duration",
+  "agent_instructions": [
+    {
+      "proposition": "For the current standard HTTP client request-duration metric, create a `Histogram` named `http.client.request.duration` with unit `s`.",
+      "supported_by": [
+        {"source": "http-metrics", "section": "http-client", "quote": "http.client.request.duration Histogram s Duration of HTTP client requests."}
+      ]
+    },
+    {
+      "proposition": "Record `http.request.method` and `server.address` as required attributes, using the values for the operation being measured.",
+      "supported_by": [
+        {"source": "http-metrics", "section": "http-client", "quote": "http.request.method Required string HTTP request method."},
+        {"source": "http-metrics", "section": "http-client", "quote": "server.address Required string Server domain name"}
+      ]
+    },
+    {
+      "proposition": "The server address is the domain name when it is available without a reverse DNS lookup; otherwise use the available IP address or UNIX domain socket name.",
+      "supported_by": [
+        {"source": "http-metrics", "section": "http-client", "quote": "Server domain name if available without reverse DNS lookup; otherwise, IP address or UNIX domain socket name."}
+      ]
+    },
+    {
+      "proposition": "Do not emit the historical `http.client.duration` metric, use milliseconds, or fall back to the older `http.method` and `net.peer.name` attribute names.",
+      "supported_by": [
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.client.duration → http.client.request.duration"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "Unit: ms → s"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.method → http.request.method"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "net.peer.name → server.address"}
+      ]
+    },
+    {
+      "proposition": "The request-body and response-body size metrics documented alongside it are separate instruments, not substitutes for request duration.",
+      "supported_by": [
+        {"source": "http-metrics", "section": "http-client", "quote": "Metric: http.client.request.body.size"},
+        {"source": "http-metrics", "section": "http-client", "quote": "Metric: http.client.response.body.size"}
+      ]
+    }
+  ]
+}

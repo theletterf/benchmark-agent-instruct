@@ -1,0 +1,37 @@
+{
+  "task": "database-client-telemetry",
+  "agent_instructions": [
+    {
+      "proposition": "For current stable database client spans, use span kind `CLIENT`.",
+      "supported_by": [
+        {"source": "database-spans", "section": "span-definition", "quote": "Span kind SHOULD be CLIENT."}
+      ]
+    },
+    {
+      "proposition": "Identify the database product with `db.system.name`; use `db.namespace` and `db.collection.name` for the logical namespace and collection, and `db.operation.name` for the operation.",
+      "supported_by": [
+        {"source": "database-spans", "section": "span-definition", "quote": "db.system.name Required string The database management system"},
+        {"source": "database-spans", "section": "span-definition", "quote": "db.namespace Conditionally Required If available."},
+        {"source": "database-spans", "section": "span-definition", "quote": "db.collection.name Conditionally Required"},
+        {"source": "database-spans", "section": "span-definition", "quote": "db.operation.name Conditionally Required"}
+      ]
+    },
+    {
+      "proposition": "Put query text in `db.query.text` only when the documented collection rules permit it; non-parameterized text should not be collected by default unless sanitization excludes sensitive data.",
+      "supported_by": [
+        {"source": "database-spans", "section": "span-definition", "quote": "Non-parameterized query text SHOULD NOT be collected by default unless there is sanitization that excludes sensitive data"},
+        {"source": "database-spans", "section": "sanitization-of-dbquerytext", "quote": "db.query.text SHOULD be collected by default only if there is sanitization that excludes sensitive information"}
+      ]
+    },
+    {
+      "proposition": "Do not mix these fields with the historical `db.system`, `db.name`, `db.sql.table`, `db.operation`, or `db.statement` attributes, which the migration guide removes or renames.",
+      "supported_by": [
+        {"source": "database-migration", "section": "summary-of-changes", "quote": "db.name Removed, integrated into the new db.namespace"},
+        {"source": "database-migration", "section": "summary-of-changes", "quote": "db.system → db.system.name"},
+        {"source": "database-migration", "section": "summary-of-changes", "quote": "db.statement → db.query.text"},
+        {"source": "database-migration", "section": "summary-of-changes", "quote": "db.operation → db.operation.name"},
+        {"source": "database-migration", "section": "summary-of-changes", "quote": "db.sql.table → db.collection.name"}
+      ]
+    }
+  ]
+}

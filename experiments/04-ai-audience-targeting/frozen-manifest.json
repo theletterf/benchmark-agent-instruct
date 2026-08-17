@@ -1,0 +1,101 @@
+{
+  "experiment": 4,
+  "experiment_name": "ai-audience-targeting",
+  "world_version": "worlds-v1",
+  "generation_timestamp": "2026-08-17T07:35:17.731359+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "task_sha256": {
+    "bellwater": "5a12d80767a9348747e7484394af1b2487535c36325d217685f45ac2b89caf5a",
+    "lantern": "73ddae37b908547a331a40bbd8e74891dd52d8abba243ff7849303348db91b4b",
+    "messenger": "50841d1b790c3b8055de5875148e83df03f69055fceb59c0a33ac9c982e22cf5",
+    "orchard": "f78614406492d6e8c6e2060460d60e9c86304f99e7a6a3a6fbe934597287ccaa",
+    "well": "3297898892b9f6a607de61db0765724bf7ef65d9048e22934e7c8c88477675c8"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "bellwater": {
+      "A": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/bellwater/A.md",
+        "sha256": "1d8595dc453a7029f85d7742bdf672abfae5b8f83aa5c4c9f8df349e56952013",
+        "characters": 765,
+        "words": 128,
+        "approx_tokens": 192
+      },
+      "B": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/bellwater/B.md",
+        "sha256": "937e54a2767db46686bda1dec47ea1ad5edafee14507fa838eaf1e2e5d370097",
+        "characters": 763,
+        "words": 125,
+        "approx_tokens": 191
+      }
+    },
+    "lantern": {
+      "A": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/lantern/A.md",
+        "sha256": "731a92d6adb2f4a32de39d815620ef7ede27df900ab6bb09237b981d985b80db",
+        "characters": 798,
+        "words": 135,
+        "approx_tokens": 200
+      },
+      "B": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/lantern/B.md",
+        "sha256": "d97e46800fa28f12c7bd73c694bbdbcc2496afc310dcaff5a15bfe02150d68de",
+        "characters": 796,
+        "words": 132,
+        "approx_tokens": 199
+      }
+    },
+    "messenger": {
+      "A": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/messenger/A.md",
+        "sha256": "0eae0a538023a6f2e021fe1532aa0940a87fed3f26dadb7563b2a926c3552694",
+        "characters": 803,
+        "words": 136,
+        "approx_tokens": 201
+      },
+      "B": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/messenger/B.md",
+        "sha256": "dd853b0e8f5d688d9b4b80ea893fec922af8b27f413a8b445278aa0fa611e0fe",
+        "characters": 801,
+        "words": 133,
+        "approx_tokens": 201
+      }
+    },
+    "orchard": {
+      "A": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/orchard/A.md",
+        "sha256": "e7b50a139789460d590a4ac3fd4da74b7664ec8202e87be5d227717f114748ce",
+        "characters": 798,
+        "words": 133,
+        "approx_tokens": 200
+      },
+      "B": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/orchard/B.md",
+        "sha256": "17cd88e7c2971500291cbbd448367214e4fce0146445ec7451a8173988bb1dfe",
+        "characters": 796,
+        "words": 130,
+        "approx_tokens": 199
+      }
+    },
+    "well": {
+      "A": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/well/A.md",
+        "sha256": "8e45b715656ac265f3843eb233810e4e1d9c3002cba1b3df6406be5c8cec8866",
+        "characters": 776,
+        "words": 139,
+        "approx_tokens": 194
+      },
+      "B": {
+        "path": "experiments/04-ai-audience-targeting/artifacts/well/B.md",
+        "sha256": "53d8759610278c8dfc92ec68ff6371a12e32e1959f06d6b1c8baea0dde5fde29",
+        "characters": 774,
+        "words": 136,
+        "approx_tokens": 194
+      }
+    }
+  },
+  "proposition_manifests": null
+}

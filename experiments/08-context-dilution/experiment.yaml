@@ -1,0 +1,14 @@
+id: 8
+name: context-dilution
+research_question: >
+  Does an isolated recommendation retain its influence when surrounded by much more irrelevant context?
+independent_variable: irrelevant context length
+conditions:
+  A: short context
+  B: long context
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

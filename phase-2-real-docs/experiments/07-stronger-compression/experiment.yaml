@@ -1,0 +1,10 @@
+id: 7
+name: stronger-compression
+phase_1_analogue: stronger compression
+research_question: Can compressed documentation be reduced further without losing corrective effect?
+independent_variable: compression strength
+conditions:
+  A: moderate compression
+  B: strong compression
+primary_metric: current
+default_runs: 3

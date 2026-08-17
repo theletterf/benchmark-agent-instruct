@@ -1,0 +1,192 @@
+{
+  "experiment": 7,
+  "experiment_name": "stronger-compression",
+  "world_version": "worlds-v1",
+  "generation_timestamp": "2026-08-17T07:35:17.731359+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "task_sha256": {
+    "bellwater": "5a12d80767a9348747e7484394af1b2487535c36325d217685f45ac2b89caf5a",
+    "lantern": "73ddae37b908547a331a40bbd8e74891dd52d8abba243ff7849303348db91b4b",
+    "messenger": "50841d1b790c3b8055de5875148e83df03f69055fceb59c0a33ac9c982e22cf5",
+    "orchard": "f78614406492d6e8c6e2060460d60e9c86304f99e7a6a3a6fbe934597287ccaa",
+    "well": "3297898892b9f6a607de61db0765724bf7ef65d9048e22934e7c8c88477675c8"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "bellwater": {
+      "A": {
+        "path": "experiments/07-stronger-compression/artifacts/bellwater/A.md",
+        "sha256": "2cdd3f78e6d2c4ef831baddfc56d1ef5671d60c6f2702043e75df18c6fb52cc6",
+        "characters": 637,
+        "words": 103,
+        "approx_tokens": 160
+      },
+      "B": {
+        "path": "experiments/07-stronger-compression/artifacts/bellwater/B.md",
+        "sha256": "c740d4f7db426eba9ecc8eeb269f7147d747b0f7c4d3a630daa30baaa17104a3",
+        "characters": 420,
+        "words": 69,
+        "approx_tokens": 105
+      }
+    },
+    "lantern": {
+      "A": {
+        "path": "experiments/07-stronger-compression/artifacts/lantern/A.md",
+        "sha256": "1eb87fb1bfa73836211a100cfb81630047d7a504022a58de995e34bd2ca80492",
+        "characters": 659,
+        "words": 108,
+        "approx_tokens": 165
+      },
+      "B": {
+        "path": "experiments/07-stronger-compression/artifacts/lantern/B.md",
+        "sha256": "9cacd8597232a1d825010722a5410f1c8b8d8d38084bb12759a92b4c96e62504",
+        "characters": 440,
+        "words": 73,
+        "approx_tokens": 110
+      }
+    },
+    "messenger": {
+      "A": {
+        "path": "experiments/07-stronger-compression/artifacts/messenger/A.md",
+        "sha256": "4e87c94ba02d20f029033ac0f120436bd23730c277a2cb7963d02f01f4e12620",
+        "characters": 665,
+        "words": 109,
+        "approx_tokens": 167
+      },
+      "B": {
+        "path": "experiments/07-stronger-compression/artifacts/messenger/B.md",
+        "sha256": "6e64a86f4a1d1f6da5b29acc902b811373f7236f748ae848ec0e521f1e963440",
+        "characters": 443,
+        "words": 74,
+        "approx_tokens": 111
+      }
+    },
+    "orchard": {
+      "A": {
+        "path": "experiments/07-stronger-compression/artifacts/orchard/A.md",
+        "sha256": "52a9f775c5ce1f475667c8b433ae2a0da7ac4e30c37edcaf4bd55ca52c114065",
+        "characters": 660,
+        "words": 105,
+        "approx_tokens": 165
+      },
+      "B": {
+        "path": "experiments/07-stronger-compression/artifacts/orchard/B.md",
+        "sha256": "cec8a170fbc9c2c69bad6c8dc9593680b71c52bc929ee4248df71f8c9fc802ce",
+        "characters": 445,
+        "words": 71,
+        "approx_tokens": 112
+      }
+    },
+    "well": {
+      "A": {
+        "path": "experiments/07-stronger-compression/artifacts/well/A.md",
+        "sha256": "5723f71a9e731c19567e96a8332804d976d015744ed7f19386cc1db58559bb7e",
+        "characters": 642,
+        "words": 111,
+        "approx_tokens": 161
+      },
+      "B": {
+        "path": "experiments/07-stronger-compression/artifacts/well/B.md",
+        "sha256": "1a00f97779a7a97ba82dfa56d65f41241b8a4405166d21a58b8cb4d5bb831bbb",
+        "characters": 428,
+        "words": 76,
+        "approx_tokens": 107
+      }
+    }
+  },
+  "proposition_manifests": {
+    "bellwater": {
+      "paths": {
+        "path_a": [
+          "stone bridge",
+          "copper coin",
+          "oak gate"
+        ],
+        "path_b": [
+          "reed bridge",
+          "rosemary",
+          "blue gate"
+        ]
+      },
+      "recommendation": {
+        "preferred": "path_b",
+        "do_not_mix": true
+      }
+    },
+    "lantern": {
+      "paths": {
+        "path_a": [
+          "cedar taper",
+          "bronze brazier",
+          "western arch"
+        ],
+        "path_b": [
+          "wax wick",
+          "glass flame-holder",
+          "eastern arch"
+        ]
+      },
+      "recommendation": {
+        "preferred": "path_a",
+        "do_not_mix": true
+      }
+    },
+    "messenger": {
+      "paths": {
+        "path_a": [
+          "river road",
+          "red seal",
+          "north tower"
+        ],
+        "path_b": [
+          "forest road",
+          "white ribbon",
+          "garden tower"
+        ]
+      },
+      "recommendation": {
+        "preferred": "path_b",
+        "do_not_mix": true
+      }
+    },
+    "orchard": {
+      "paths": {
+        "path_a": [
+          "eastern ladder",
+          "silver basket",
+          "noon bell"
+        ],
+        "path_b": [
+          "western ladder",
+          "linen sling",
+          "evening whistle"
+        ]
+      },
+      "recommendation": {
+        "preferred": "path_a",
+        "do_not_mix": true
+      }
+    },
+    "well": {
+      "paths": {
+        "path_a": [
+          "iron bucket",
+          "three turns",
+          "black basin"
+        ],
+        "path_b": [
+          "clay jar",
+          "five turns",
+          "white basin"
+        ]
+      },
+      "recommendation": {
+        "preferred": "path_b",
+        "do_not_mix": true
+      }
+    }
+  }
+}

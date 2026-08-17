@@ -1,0 +1,14 @@
+[
+  {"id":"http-method","historical":"http.method","current":"http.request.method","source":"http-migration","family":"HTTP client/server span attributes"},
+  {"id":"http-status","historical":"http.status_code","current":"http.response.status_code","source":"http-migration","family":"HTTP client/server span attributes"},
+  {"id":"http-url","historical":"http.url","current":"url.full","source":"http-migration","family":"HTTP client span attributes"},
+  {"id":"http-server-address","historical":"net.host.name","current":"server.address","source":"http-migration","family":"HTTP client/server span attributes"},
+  {"id":"http-duration-name","historical":"http.client.duration","current":"http.client.request.duration","source":"http-migration","family":"HTTP client duration metric"},
+  {"id":"http-duration-unit","historical":"ms","current":"s","source":"http-migration","family":"HTTP duration metric unit"},
+  {"id":"db-system","historical":"db.system","current":"db.system.name","source":"database-migration","family":"Database client span attributes"},
+  {"id":"db-statement","historical":"db.statement","current":"db.query.text","source":"database-migration","family":"Database client span attributes"},
+  {"id":"db-operation","historical":"db.operation","current":"db.operation.name","source":"database-migration","family":"Database client span attributes"},
+  {"id":"db-namespace","historical":"db.name","current":"db.namespace","source":"database-migration","family":"Database client span attributes"},
+  {"id":"semconv-http-dup","historical":"old conventions only by default","current":"http/dup emits old and stable conventions","source":"http-migration","family":"Semantic-convention migration controls"},
+  {"id":"java-agent-otlp-default","historical":"grpc","current":"http/protobuf","source":"java-agent-configuration","family":"Java agent exporter configuration"}
+]

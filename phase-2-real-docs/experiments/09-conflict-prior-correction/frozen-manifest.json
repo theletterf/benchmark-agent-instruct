@@ -1,0 +1,104 @@
+{
+  "phase": 2,
+  "project": "sqlalchemy",
+  "sqlalchemy_version": "2.0.52",
+  "experiment": 9,
+  "experiment_name": "conflict-prior-correction",
+  "generation_timestamp": "2026-08-17T08:56:38.865540+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "source_manifest_sha256": "ca1ce87a79d4ec051fa11298d953e37365056c83cf23e58f576caa535e444d63",
+  "task_sha256": {
+    "primary-key-lookup": "afe763112d340ce3f0fe409ba3136e90b1b54a0a0e476e7b491cc49f3ef191b7",
+    "retrieve-all": "3200aae6600fc7cd9d36c09cef7dc3742d1462d99a528605ebdaf336ef26fe0e",
+    "filter-one": "9aab4fe8e4755663a8033d023b0c474915d39fee1dfee5b1f8ca5db91396d749",
+    "first-matching": "280f42482fdebb0452c6527c6d77b82c47350538bfb3393de0c54c639900a170",
+    "join-filter": "c90f2fe0fe6e769686d46c716d446c026a6472d13259563fef30e3660e597f1d"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "primary-key-lookup": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/primary-key-lookup/A.md",
+        "sha256": "b82249ffffe8479e2c1ce1cc4a017b495fa109410ecf646decf1f884f2322397",
+        "characters": 1362,
+        "words": 201,
+        "approx_tokens": 341
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/primary-key-lookup/B.md",
+        "sha256": "07a77f9a2ff3bd6cd8596f7526c5263ccf8dbe07c97e4fb208cb9adc18154746",
+        "characters": 1327,
+        "words": 197,
+        "approx_tokens": 332
+      }
+    },
+    "retrieve-all": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/retrieve-all/A.md",
+        "sha256": "3206b91bf7b46d2dbaeed7534c31cf5a213a6644577f05c3898d47a2bdc6807c",
+        "characters": 1549,
+        "words": 218,
+        "approx_tokens": 388
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/retrieve-all/B.md",
+        "sha256": "d2d56774fb76b7722701dff300087fdcf4601397e72e17db9d0fc2dbe0e351f1",
+        "characters": 1514,
+        "words": 214,
+        "approx_tokens": 379
+      }
+    },
+    "filter-one": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/filter-one/A.md",
+        "sha256": "40c908f0aa2ca028c66fcf82912b9b4ba300cc77c11a918ecd520d11679117e7",
+        "characters": 1583,
+        "words": 228,
+        "approx_tokens": 396
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/filter-one/B.md",
+        "sha256": "75798cb2894f839ea2c90d80cbbf0d964daa5b4eef793d6d16a241fed19d1f9f",
+        "characters": 1548,
+        "words": 224,
+        "approx_tokens": 387
+      }
+    },
+    "first-matching": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/first-matching/A.md",
+        "sha256": "3e0232948949713031809d2b644b8364a7a4150c73663819fc82dd8b1af09b82",
+        "characters": 1438,
+        "words": 203,
+        "approx_tokens": 360
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/first-matching/B.md",
+        "sha256": "41712b843340dc71e81224724d3812602dc9584d58dbb7c4b6d0bcc97ad0fd5b",
+        "characters": 1403,
+        "words": 199,
+        "approx_tokens": 351
+      }
+    },
+    "join-filter": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/join-filter/A.md",
+        "sha256": "da1005cecf5b83226cc736c9946153454558c1476bc699bbb8c82a0a9361a20e",
+        "characters": 1449,
+        "words": 201,
+        "approx_tokens": 363
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/09-conflict-prior-correction/join-filter/B.md",
+        "sha256": "ab706de7d77cfb6c0b1bb822490a4f97a783f68e801ff362f46b29e40fb00836",
+        "characters": 1414,
+        "words": 197,
+        "approx_tokens": 354
+      }
+    }
+  },
+  "proposition_manifests": null
+}

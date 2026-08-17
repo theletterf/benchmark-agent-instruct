@@ -1,0 +1,6 @@
+task,n,current,legacy,mixed,current_rate,weak_headroom
+primary-key-lookup,2,2,0,0,1.0,True
+retrieve-all,2,2,0,0,1.0,True
+filter-one,2,2,0,0,1.0,True
+first-matching,2,2,0,0,1.0,True
+join-filter,2,0,2,0,0.0,False

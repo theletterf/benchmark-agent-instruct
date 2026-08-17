@@ -1,0 +1,19 @@
+{
+  "task": "filter-one",
+  "function": "def find_user_by_name(session, name):",
+  "current_patterns": [
+    "select",
+    "Session.scalars",
+    "ScalarResult.one_or_none"
+  ],
+  "legacy_patterns": [
+    "Session.query",
+    "Query.one_or_none"
+  ],
+  "required_behavior": [
+    "Return the User whose name equals name.",
+    "Return None when no User matches."
+  ],
+  "current_reference": "def find_user_by_name(session, name):\n    return session.scalars(select(User).where(User.name == name)).one_or_none()",
+  "legacy_reference": "def find_user_by_name(session, name):\n    return session.query(User).filter(User.name == name).one_or_none()"
+}

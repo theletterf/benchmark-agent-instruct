@@ -1,0 +1,38 @@
+{
+  "project": "sqlalchemy",
+  "documentation_version": "2.0.52",
+  "runtime_version": "2.0.52",
+  "retrieval_date": "2026-08-17",
+  "sources": [
+    {
+      "id": "orm-querying-guide",
+      "url": "https://docs.sqlalchemy.org/en/20/orm/queryguide/select.html",
+      "snapshot": "orm-querying-guide.html",
+      "sha256": "c0e2f3a77ed344680d294b61f128814fefc72ca20dc806af9b337d4c4d2ef73c"
+    },
+    {
+      "id": "session-basics",
+      "url": "https://docs.sqlalchemy.org/en/20/orm/session_basics.html",
+      "snapshot": "session-basics.html",
+      "sha256": "66b41a483edac8ad983cfc12db6487fd76265a1cb626a798dc0c076bad4390da"
+    },
+    {
+      "id": "session-api",
+      "url": "https://docs.sqlalchemy.org/en/20/orm/session_api.html",
+      "snapshot": "session-api.html",
+      "sha256": "40cfc232af5027f37714144c35ce2035791cab8511615ef75478af538826130d"
+    },
+    {
+      "id": "migration-20",
+      "url": "https://docs.sqlalchemy.org/en/20/changelog/migration_20.html",
+      "snapshot": "migration-20.html",
+      "sha256": "aa06b751764f959f28b84961367a5a0a51e4e63e7b14b6548f153d39e84a38f1"
+    },
+    {
+      "id": "legacy-query-api",
+      "url": "https://docs.sqlalchemy.org/en/20/orm/queryguide/query.html",
+      "snapshot": "legacy-query-api.html",
+      "sha256": "3d846bbc4cdc49e51bef36e43064e4c3da472a01a969cb3c5c07e4fab45dc943"
+    }
+  ]
+}

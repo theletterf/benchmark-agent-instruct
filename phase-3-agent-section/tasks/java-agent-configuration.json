@@ -1,0 +1,10 @@
+{
+  "id": "java-agent-configuration",
+  "title": "Java agent and SDK defaults",
+  "prompt": "An application uses OpenTelemetry Java agent 2.x. OTLP protocol, trace exporter, propagators, and trace sampler are unset. OTEL_SERVICE_NAME is checkout, while OTEL_RESOURCE_ATTRIBUTES contains service.name=cart. Using the supplied documentation, return only JSON with exporter_protocol, effective_service_name, traces_exporter, propagators, and traces_sampler.",
+  "source_sections": [
+    {"source_id": "java-agent-configuration", "sections": ["__intro__", "agent-configuration", "configuring-with-environment-variables", "configuration-file", "sdk-configuration"]},
+    {"source_id": "sdk-environment-variables", "sections": ["__intro__", "implementation-guidelines", "parsing-empty-value", "type-specific-guidance", "general-sdk-configuration", "exporter-selection"]}
+  ],
+  "agent_section": "For OpenTelemetry Java agent 2.x, the default OTLP protocol is `http/protobuf`, not `grpc`. If both `OTEL_SERVICE_NAME` and a `service.name` entry in `OTEL_RESOURCE_ATTRIBUTES` are present, `OTEL_SERVICE_NAME` takes precedence, so the effective service name is the value of `OTEL_SERVICE_NAME`. With the corresponding SDK environment variables unset, the trace exporter defaults to `otlp`, the propagators default to `tracecontext,baggage`, and the trace sampler defaults to `parentbased_always_on`. An empty environment-variable value is interpreted in the same way as an unset variable."
+}

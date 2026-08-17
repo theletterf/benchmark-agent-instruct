@@ -1,0 +1,15 @@
+--- normal/java-agent-configuration.md
++++ for-agents/java-agent-configuration.md
+@@ -6,6 +6,12 @@
+ - Java agent configuration — https://opentelemetry.io/docs/zero-code/java/agent/configuration/ (OpenTelemetry Java agent 2.x documentation, retrieved 2026-08-17)
+ - Environment Variable Specification — https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/ (OpenTelemetry specification 1.60.0, retrieved 2026-08-17)
+ 
++
++<!-- phase-3-for-agents:start -->
++## For agents
++
++For OpenTelemetry Java agent 2.x, the default OTLP protocol is `http/protobuf`, not `grpc`. If both `OTEL_SERVICE_NAME` and a `service.name` entry in `OTEL_RESOURCE_ATTRIBUTES` are present, `OTEL_SERVICE_NAME` takes precedence, so the effective service name is the value of `OTEL_SERVICE_NAME`. With the corresponding SDK environment variables unset, the trace exporter defaults to `otlp`, the propagators default to `tracecontext,baggage`, and the trace sampler defaults to `parentbased_always_on`. An empty environment-variable value is interpreted in the same way as an unset variable.
++<!-- phase-3-for-agents:end -->
+ ---
+ 
+ <!-- source: java-agent-configuration#__intro__ -->

@@ -1,2 +1,2 @@
-"""Fable documentation instruction-salience benchmark."""
-__version__ = "0.1.0"
+"""Controlled fable-documentation experiment chain."""
+__version__ = "2.0.0"

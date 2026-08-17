@@ -1,0 +1,14 @@
+id: 2
+name: structural-isolation
+research_question: >
+  Does isolating an otherwise identical recommendation increase preferred-path compliance?
+independent_variable: paragraph isolation
+conditions:
+  A: isolated paragraph
+  B: enmeshed prose
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

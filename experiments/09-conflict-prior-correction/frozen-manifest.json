@@ -1,0 +1,101 @@
+{
+  "experiment": 9,
+  "experiment_name": "conflict-prior-correction",
+  "world_version": "worlds-v1",
+  "generation_timestamp": "2026-08-17T07:35:17.731359+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "task_sha256": {
+    "bellwater": "e3a41e2fc6ac72511f0643d0df1aaceb3d8f51936761140843b32be4a5146cd7",
+    "lantern": "301edfb6e4dee970004d1e80b75714025249102869eaa49969892d10ae950a6a",
+    "messenger": "aba3cc9e66ec406da430fcb8d2a28b6966767e78e9f2d188696fa554289c2028",
+    "orchard": "02ff16592238a2341cbcb9356a05c66ad9e4d667ea6ba9a50b73a675b3e724a7",
+    "well": "0ff84a56f9034da298fc44ffa45c28342d846368dcbc0c5d0c294e5bd6540af5"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "bellwater": {
+      "A": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/bellwater/A.md",
+        "sha256": "0a4743f1eee5ace5ec53930fb884b609040e5e4922fce93321421c73c7cd2c62",
+        "characters": 970,
+        "words": 151,
+        "approx_tokens": 243
+      },
+      "B": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/bellwater/B.md",
+        "sha256": "705226b37b960d25b3a7ea6e353b2dcec736e7ff883e0c73158c9e50b20c7cd6",
+        "characters": 935,
+        "words": 147,
+        "approx_tokens": 234
+      }
+    },
+    "lantern": {
+      "A": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/lantern/A.md",
+        "sha256": "48c0fba1fedb6861bb908ab72340409e2fb12838ba5320e17f5e055a3bcc8251",
+        "characters": 968,
+        "words": 152,
+        "approx_tokens": 242
+      },
+      "B": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/lantern/B.md",
+        "sha256": "4278e476fc294a415a3794eb414305c875b2be7be4e70d842f62cc54066224e2",
+        "characters": 933,
+        "words": 148,
+        "approx_tokens": 234
+      }
+    },
+    "messenger": {
+      "A": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/messenger/A.md",
+        "sha256": "e8fbbc0720e5c40979168658fc359f9ac40837b760e928e0ba1b4e0c696a3629",
+        "characters": 970,
+        "words": 153,
+        "approx_tokens": 243
+      },
+      "B": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/messenger/B.md",
+        "sha256": "97c1b8d1f90286405581e16891ebb2190d94c61837f01cba96b3e158a4295c66",
+        "characters": 935,
+        "words": 149,
+        "approx_tokens": 234
+      }
+    },
+    "orchard": {
+      "A": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/orchard/A.md",
+        "sha256": "26c2017234dde0a94fef69288f2544004d62dfc49318928831d3c8107c0c059e",
+        "characters": 977,
+        "words": 149,
+        "approx_tokens": 245
+      },
+      "B": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/orchard/B.md",
+        "sha256": "ec4ee311fc5351aa316cb018dfb79232174c12fa3c87e7527871244083d3d6c6",
+        "characters": 942,
+        "words": 145,
+        "approx_tokens": 236
+      }
+    },
+    "well": {
+      "A": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/well/A.md",
+        "sha256": "51254bc015c9b1bd399619e699f37437a06e53d87b09adda2c35714ee5caba4d",
+        "characters": 963,
+        "words": 155,
+        "approx_tokens": 241
+      },
+      "B": {
+        "path": "experiments/09-conflict-prior-correction/artifacts/well/B.md",
+        "sha256": "dd59f6b85726e38f539a00de59c16e183938f6d55a5ce39a076ff2db6fc249dc",
+        "characters": 928,
+        "words": 151,
+        "approx_tokens": 232
+      }
+    }
+  },
+  "proposition_manifests": null
+}

@@ -1,0 +1,31 @@
+{
+  "task": "java-agent-configuration",
+  "agent_instructions": [
+    {
+      "proposition": "For OpenTelemetry Java agent 2.x, the default OTLP protocol is `http/protobuf`, not `grpc`.",
+      "supported_by": [
+        {"source": "java-agent-configuration", "section": "sdk-configuration", "quote": "versions 2.0+ of the Java agent and OpenTelemetry Spring Boot starter use http/protobuf as the default protocol, not grpc"}
+      ]
+    },
+    {
+      "proposition": "If both `OTEL_SERVICE_NAME` and a `service.name` entry in `OTEL_RESOURCE_ATTRIBUTES` are present, `OTEL_SERVICE_NAME` takes precedence, so the effective service name is the value of `OTEL_SERVICE_NAME`.",
+      "supported_by": [
+        {"source": "sdk-environment-variables", "section": "general-sdk-configuration", "quote": "If service.name is also provided in OTEL_RESOURCE_ATTRIBUTES, then OTEL_SERVICE_NAME takes precedence."}
+      ]
+    },
+    {
+      "proposition": "With the corresponding SDK environment variables unset, the trace exporter defaults to `otlp`, the propagators default to `tracecontext,baggage`, and the trace sampler defaults to `parentbased_always_on`.",
+      "supported_by": [
+        {"source": "sdk-environment-variables", "section": "exporter-selection", "quote": "OTEL_TRACES_EXPORTER Trace exporter to be used otlp"},
+        {"source": "sdk-environment-variables", "section": "general-sdk-configuration", "quote": "OTEL_PROPAGATORS Propagators to be used as a comma-separated list tracecontext,baggage"},
+        {"source": "sdk-environment-variables", "section": "general-sdk-configuration", "quote": "OTEL_TRACES_SAMPLER Sampler to be used for traces parentbased_always_on"}
+      ]
+    },
+    {
+      "proposition": "An empty environment-variable value is interpreted in the same way as an unset variable.",
+      "supported_by": [
+        {"source": "sdk-environment-variables", "section": "parsing-empty-value", "quote": "The SDK MUST interpret an empty value of an environment variable the same way as when the variable is unset."}
+      ]
+    }
+  ]
+}

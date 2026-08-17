@@ -1,0 +1,10 @@
+id: 9
+name: conflict-prior-correction
+phase_1_analogue: conflict / prior correction
+research_question: Does structural isolation help current guidance overcome salient official legacy information?
+independent_variable: current-correction isolation
+conditions:
+  A: isolated current correction
+  B: enmeshed current correction
+primary_metric: current
+default_runs: 3

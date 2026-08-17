@@ -1,0 +1,10 @@
+{
+  "task": "http-client-duration",
+  "decisions": [
+    {"id": "metric-name", "kind": "scalar", "path": ["metric_name"], "current": ["http.client.request.duration"], "historical": ["http.client.duration"]},
+    {"id": "instrument", "kind": "scalar", "path": ["instrument"], "current": ["Histogram"], "historical": []},
+    {"id": "unit", "kind": "scalar", "path": ["unit"], "current": ["s"], "historical": ["ms"]},
+    {"id": "request-method", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["http.request.method"], "historical_keys": ["http.method"], "expected": ["POST"]},
+    {"id": "server-address", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["server.address"], "historical_keys": ["net.peer.name"], "expected": ["shop.example"]}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "task": "join-filter",
+  "function": "def find_user_by_email(session, email):",
+  "current_patterns": [
+    "select",
+    "Select.join",
+    "Session.scalars"
+  ],
+  "legacy_patterns": [
+    "Session.query",
+    "Query.join"
+  ],
+  "required_behavior": [
+    "Join User to Address.",
+    "Return the User whose Address.email_address equals email.",
+    "Return None when no address matches."
+  ],
+  "current_reference": "def find_user_by_email(session, email):\n    stmt = select(User).join(User.addresses).where(Address.email_address == email)\n    return session.scalars(stmt).one_or_none()",
+  "legacy_reference": "def find_user_by_email(session, email):\n    return session.query(User).join(User.addresses).filter(Address.email_address == email).one_or_none()"
+}

@@ -1,0 +1,11 @@
+{
+  "task": "database-client-telemetry",
+  "decisions": [
+    {"id": "span-kind", "kind": "scalar", "path": ["span_kind"], "current": ["CLIENT"], "historical": []},
+    {"id": "database-system", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["db.system.name"], "historical_keys": ["db.system"], "expected": ["postgresql"]},
+    {"id": "database-namespace", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["db.namespace"], "historical_keys": ["db.name"], "expected": ["shop"]},
+    {"id": "database-collection", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["db.collection.name"], "historical_keys": ["db.sql.table"], "expected": ["orders"]},
+    {"id": "database-operation", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["db.operation.name"], "historical_keys": ["db.operation"], "expected": ["SELECT"]},
+    {"id": "query-text", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["db.query.text"], "historical_keys": ["db.statement"], "expected": ["SELECT * FROM orders WHERE id = ?"]}
+  ]
+}

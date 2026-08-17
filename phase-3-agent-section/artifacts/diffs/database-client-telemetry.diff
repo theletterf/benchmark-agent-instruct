@@ -1,0 +1,15 @@
+--- normal/database-client-telemetry.md
++++ for-agents/database-client-telemetry.md
+@@ -6,6 +6,12 @@
+ - Semantic conventions for database client spans — https://opentelemetry.io/docs/specs/semconv/db/database-spans/ (Semantic conventions 1.44.0; references OpenTelemetry specification 1.59.0, retrieved 2026-08-17)
+ - Database semantic convention stability migration guide — https://opentelemetry.io/docs/specs/semconv/non-normative/db-migration/ (Stable database migration from semantic conventions 1.33.0, retrieved 2026-08-17)
+ 
++
++<!-- phase-3-for-agents:start -->
++## For agents
++
++For current stable database client spans, use span kind `CLIENT`. Identify the database product with `db.system.name`; use `db.namespace` and `db.collection.name` for the logical namespace and collection, and `db.operation.name` for the operation. Put query text in `db.query.text` only when the documented collection rules permit it; non-parameterized text should not be collected by default unless sanitization excludes sensitive data. Do not mix these fields with the historical `db.system`, `db.name`, `db.sql.table`, `db.operation`, or `db.statement` attributes, which the migration guide removes or renames.
++<!-- phase-3-for-agents:end -->
+ ---
+ 
+ <!-- source: database-spans#__intro__ -->

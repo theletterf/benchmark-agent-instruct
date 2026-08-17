@@ -1,0 +1,104 @@
+{
+  "phase": 2,
+  "project": "sqlalchemy",
+  "sqlalchemy_version": "2.0.52",
+  "experiment": 4,
+  "experiment_name": "ai-audience-targeting",
+  "generation_timestamp": "2026-08-17T08:56:38.865540+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "source_manifest_sha256": "ca1ce87a79d4ec051fa11298d953e37365056c83cf23e58f576caa535e444d63",
+  "task_sha256": {
+    "primary-key-lookup": "afe763112d340ce3f0fe409ba3136e90b1b54a0a0e476e7b491cc49f3ef191b7",
+    "retrieve-all": "3200aae6600fc7cd9d36c09cef7dc3742d1462d99a528605ebdaf336ef26fe0e",
+    "filter-one": "9aab4fe8e4755663a8033d023b0c474915d39fee1dfee5b1f8ca5db91396d749",
+    "first-matching": "280f42482fdebb0452c6527c6d77b82c47350538bfb3393de0c54c639900a170",
+    "join-filter": "c90f2fe0fe6e769686d46c716d446c026a6472d13259563fef30e3660e597f1d"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "primary-key-lookup": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/primary-key-lookup/A.md",
+        "sha256": "6ac27741e9a69254ebf8c95c520493c8fe87e6fa30fb8b601aea068678def96e",
+        "characters": 419,
+        "words": 60,
+        "approx_tokens": 105
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/primary-key-lookup/B.md",
+        "sha256": "c0914ff6680d0cd9c39022678d18152c51aaf07705804610f179f7c8949f8a4b",
+        "characters": 417,
+        "words": 57,
+        "approx_tokens": 105
+      }
+    },
+    "retrieve-all": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/retrieve-all/A.md",
+        "sha256": "27bd90d1f07bba081ae0783dd9ce76cbc14a029f705569a2ae7e5827bbda5ac2",
+        "characters": 606,
+        "words": 77,
+        "approx_tokens": 152
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/retrieve-all/B.md",
+        "sha256": "8181b9fb4f35dda8039c85f862d39c4402182e486740385362e3bb5b9dbf1aeb",
+        "characters": 604,
+        "words": 74,
+        "approx_tokens": 151
+      }
+    },
+    "filter-one": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/filter-one/A.md",
+        "sha256": "f78a9ba8da2d35d60daf17cab38a4b9efcef93f1a4d971e9997ca7af3683f7f4",
+        "characters": 640,
+        "words": 87,
+        "approx_tokens": 160
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/filter-one/B.md",
+        "sha256": "54cea2dfa3bf47843c4213ba45bec5c982a5d10c0bc31b223cafe3a1dd05575d",
+        "characters": 638,
+        "words": 84,
+        "approx_tokens": 160
+      }
+    },
+    "first-matching": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/first-matching/A.md",
+        "sha256": "a317615a11475569424fa4691e19b6439fc2faac781d4f008796756689690c8b",
+        "characters": 495,
+        "words": 62,
+        "approx_tokens": 124
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/first-matching/B.md",
+        "sha256": "2907685d8566e3734b6ffc12c3f55c70a2f6b2e7a4946c749f11bcfc829dd2f1",
+        "characters": 493,
+        "words": 59,
+        "approx_tokens": 124
+      }
+    },
+    "join-filter": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/join-filter/A.md",
+        "sha256": "30f0c64463d50b99707f720ba5b6edc5db5eb7c17df392928bd2c70810f41fc5",
+        "characters": 506,
+        "words": 60,
+        "approx_tokens": 127
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/04-ai-audience-targeting/join-filter/B.md",
+        "sha256": "2ab3a466502c64c8673e3c7a99de0288fa4ce147b06279806c4b61e971e3ad5f",
+        "characters": 504,
+        "words": 57,
+        "approx_tokens": 126
+      }
+    }
+  },
+  "proposition_manifests": null
+}

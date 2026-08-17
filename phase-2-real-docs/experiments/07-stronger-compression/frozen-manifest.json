@@ -1,0 +1,185 @@
+{
+  "phase": 2,
+  "project": "sqlalchemy",
+  "sqlalchemy_version": "2.0.52",
+  "experiment": 7,
+  "experiment_name": "stronger-compression",
+  "generation_timestamp": "2026-08-17T08:56:38.865540+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "source_manifest_sha256": "ca1ce87a79d4ec051fa11298d953e37365056c83cf23e58f576caa535e444d63",
+  "task_sha256": {
+    "primary-key-lookup": "afe763112d340ce3f0fe409ba3136e90b1b54a0a0e476e7b491cc49f3ef191b7",
+    "retrieve-all": "3200aae6600fc7cd9d36c09cef7dc3742d1462d99a528605ebdaf336ef26fe0e",
+    "filter-one": "9aab4fe8e4755663a8033d023b0c474915d39fee1dfee5b1f8ca5db91396d749",
+    "first-matching": "280f42482fdebb0452c6527c6d77b82c47350538bfb3393de0c54c639900a170",
+    "join-filter": "c90f2fe0fe6e769686d46c716d446c026a6472d13259563fef30e3660e597f1d"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "primary-key-lookup": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/primary-key-lookup/A.md",
+        "sha256": "3830b8b1cc321ad993aa74e1debb4984905dc3f54a25be498b2d0d4cb34cf64e",
+        "characters": 663,
+        "words": 100,
+        "approx_tokens": 166
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/primary-key-lookup/B.md",
+        "sha256": "1c420bcdb42d11f4036440485bfe12bf24bd30ed8aef92965b5c959ac4000e47",
+        "characters": 394,
+        "words": 60,
+        "approx_tokens": 99
+      }
+    },
+    "retrieve-all": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/retrieve-all/A.md",
+        "sha256": "7fa9427d3abae935a85d72e6ca1442e5887066667e673b0fb444ce71a928f084",
+        "characters": 668,
+        "words": 94,
+        "approx_tokens": 167
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/retrieve-all/B.md",
+        "sha256": "011d3902060f23cc08f327406a050556c076e1e4142f3e8c93638128f8d974af",
+        "characters": 399,
+        "words": 54,
+        "approx_tokens": 100
+      }
+    },
+    "filter-one": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/filter-one/A.md",
+        "sha256": "ff70a568fd351d9e76f97f40cf127885d84216ea11c6d8e535f85744263ab1be",
+        "characters": 749,
+        "words": 111,
+        "approx_tokens": 188
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/filter-one/B.md",
+        "sha256": "d307c9f28b78511e768e8695b3dd13e2f7043dd066573c1889983eb5b07eeee8",
+        "characters": 480,
+        "words": 71,
+        "approx_tokens": 120
+      }
+    },
+    "first-matching": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/first-matching/A.md",
+        "sha256": "888b45b5d7335ea35ec064f230273f641cc3cbb3414588e770b75e2748f7cc59",
+        "characters": 797,
+        "words": 117,
+        "approx_tokens": 200
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/first-matching/B.md",
+        "sha256": "25ca1cf2b6724a0925f9dd3d0dd3406cfc3caeddcae9370bb03bbc840227f4c7",
+        "characters": 528,
+        "words": 77,
+        "approx_tokens": 132
+      }
+    },
+    "join-filter": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/join-filter/A.md",
+        "sha256": "6f4166840a560cfdbe82326ce953a1c5d8b1fa6a92aa3072110073923b784f5a",
+        "characters": 827,
+        "words": 116,
+        "approx_tokens": 207
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/07-stronger-compression/join-filter/B.md",
+        "sha256": "5b5798e60532bc26c5636d96c8eca077425a7cc0eb12b6e85c938233196cd292",
+        "characters": 558,
+        "words": 76,
+        "approx_tokens": 140
+      }
+    }
+  },
+  "proposition_manifests": {
+    "primary-key-lookup": {
+      "current_api_family": [
+        "Session.get",
+        "select with Session.execute/scalars"
+      ],
+      "legacy_api_family": [
+        "Query.get",
+        "Session.query"
+      ],
+      "required_behavior": [
+        "Return the matching User.",
+        "Return None when the identifier is absent."
+      ],
+      "recommendation": "For this function, recommend `session.get(User, user_id)` rather than the legacy `Query.get()` form."
+    },
+    "retrieve-all": {
+      "current_api_family": [
+        "select",
+        "Session.scalars"
+      ],
+      "legacy_api_family": [
+        "Session.query",
+        "Query.all"
+      ],
+      "required_behavior": [
+        "Return all User objects.",
+        "Return them ordered by User.id."
+      ],
+      "recommendation": "For this function, recommend `session.scalars(select(User).order_by(User.id)).all()` rather than constructing a legacy `Query`."
+    },
+    "filter-one": {
+      "current_api_family": [
+        "select",
+        "Session.scalars",
+        "ScalarResult.one_or_none"
+      ],
+      "legacy_api_family": [
+        "Session.query",
+        "Query.one_or_none"
+      ],
+      "required_behavior": [
+        "Return the User whose name equals name.",
+        "Return None when no User matches."
+      ],
+      "recommendation": "For this function, recommend a `select(User).where(User.name == name)` statement executed with `Session.scalars()`, followed by `one_or_none()`, rather than a legacy `Query`."
+    },
+    "first-matching": {
+      "current_api_family": [
+        "select",
+        "Session.scalars",
+        "Select.limit",
+        "Result.first"
+      ],
+      "legacy_api_family": [
+        "Session.query",
+        "Query.first"
+      ],
+      "required_behavior": [
+        "Return the first User ordered by User.id whose name begins with prefix.",
+        "Return None when no User matches."
+      ],
+      "recommendation": "For this function, recommend `select(User)` with the prefix filter, `order_by(User.id)`, and `limit(1)`, executed through `Session.scalars()` and finished with `first()`, rather than a legacy `Query`."
+    },
+    "join-filter": {
+      "current_api_family": [
+        "select",
+        "Select.join",
+        "Session.scalars"
+      ],
+      "legacy_api_family": [
+        "Session.query",
+        "Query.join"
+      ],
+      "required_behavior": [
+        "Join User to Address.",
+        "Return the User whose Address.email_address equals email.",
+        "Return None when no address matches."
+      ],
+      "recommendation": "For this function, recommend `select(User).join(User.addresses).where(Address.email_address == email)` executed with `Session.scalars()` and finished with `one_or_none()`, rather than a legacy `Query`."
+    }
+  }
+}

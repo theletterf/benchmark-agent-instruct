@@ -1,0 +1,104 @@
+{
+  "phase": 2,
+  "project": "sqlalchemy",
+  "sqlalchemy_version": "2.0.52",
+  "experiment": 3,
+  "experiment_name": "heading-effect",
+  "generation_timestamp": "2026-08-17T08:56:38.865540+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "source_manifest_sha256": "ca1ce87a79d4ec051fa11298d953e37365056c83cf23e58f576caa535e444d63",
+  "task_sha256": {
+    "primary-key-lookup": "afe763112d340ce3f0fe409ba3136e90b1b54a0a0e476e7b491cc49f3ef191b7",
+    "retrieve-all": "3200aae6600fc7cd9d36c09cef7dc3742d1462d99a528605ebdaf336ef26fe0e",
+    "filter-one": "9aab4fe8e4755663a8033d023b0c474915d39fee1dfee5b1f8ca5db91396d749",
+    "first-matching": "280f42482fdebb0452c6527c6d77b82c47350538bfb3393de0c54c639900a170",
+    "join-filter": "c90f2fe0fe6e769686d46c716d446c026a6472d13259563fef30e3660e597f1d"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "primary-key-lookup": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/primary-key-lookup/A.md",
+        "sha256": "c0914ff6680d0cd9c39022678d18152c51aaf07705804610f179f7c8949f8a4b",
+        "characters": 417,
+        "words": 57,
+        "approx_tokens": 105
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/primary-key-lookup/B.md",
+        "sha256": "349a4d54d1769a38d978b79dfb23f636d2fb21a06fd75abab4bb972f996afe2d",
+        "characters": 392,
+        "words": 54,
+        "approx_tokens": 98
+      }
+    },
+    "retrieve-all": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/retrieve-all/A.md",
+        "sha256": "8181b9fb4f35dda8039c85f862d39c4402182e486740385362e3bb5b9dbf1aeb",
+        "characters": 604,
+        "words": 74,
+        "approx_tokens": 151
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/retrieve-all/B.md",
+        "sha256": "3aa7853508c4e22d1ce7c29581f1d468955100ebfb0c313210ac73cac495937f",
+        "characters": 579,
+        "words": 71,
+        "approx_tokens": 145
+      }
+    },
+    "filter-one": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/filter-one/A.md",
+        "sha256": "54cea2dfa3bf47843c4213ba45bec5c982a5d10c0bc31b223cafe3a1dd05575d",
+        "characters": 638,
+        "words": 84,
+        "approx_tokens": 160
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/filter-one/B.md",
+        "sha256": "9385c2604af4387a13bcd1a17e3851e85a50cd93e886280823603dad93b8165b",
+        "characters": 613,
+        "words": 81,
+        "approx_tokens": 154
+      }
+    },
+    "first-matching": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/first-matching/A.md",
+        "sha256": "2907685d8566e3734b6ffc12c3f55c70a2f6b2e7a4946c749f11bcfc829dd2f1",
+        "characters": 493,
+        "words": 59,
+        "approx_tokens": 124
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/first-matching/B.md",
+        "sha256": "81680e1cc836c7ac9a86dbeb50c826d3795e1224a97df6ce2edad8e363de7a50",
+        "characters": 468,
+        "words": 56,
+        "approx_tokens": 117
+      }
+    },
+    "join-filter": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/join-filter/A.md",
+        "sha256": "2ab3a466502c64c8673e3c7a99de0288fa4ce147b06279806c4b61e971e3ad5f",
+        "characters": 504,
+        "words": 57,
+        "approx_tokens": 126
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/03-heading-effect/join-filter/B.md",
+        "sha256": "3a6180dd446f1cddaed3f0c8cc767a2b78d298fd2a0c20115b40cf513d6b02f5",
+        "characters": 479,
+        "words": 54,
+        "approx_tokens": 120
+      }
+    }
+  },
+  "proposition_manifests": null
+}

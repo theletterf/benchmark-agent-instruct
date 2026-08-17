@@ -1,0 +1,6 @@
+task,responses,decisions,current_decisions,historical_decisions,current_decision_rate,fully_current_responses,fully_current_rate,mixed_responses
+http-client-span,2,8,8,0,1.0,2,1.0,0
+http-server-span,2,8,8,0,1.0,2,1.0,0
+http-client-duration,2,4,4,0,1.0,2,1.0,0
+database-client-span,2,10,10,0,1.0,2,1.0,0
+java-agent-configuration,2,4,3,0,0.75,1,0.5,0

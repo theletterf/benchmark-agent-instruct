@@ -1,0 +1,44 @@
+{
+  "task": "http-client-telemetry",
+  "agent_instructions": [
+    {
+      "proposition": "For current stable HTTP client spans, use span kind `CLIENT`.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-client-span", "quote": "Span kind MUST be CLIENT."}
+      ]
+    },
+    {
+      "proposition": "Record the request method as `http.request.method`, the absolute requested URL as `url.full`, and the destination as `server.address` and `server.port`.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-client-span", "quote": "http.request.method Required string HTTP request method."},
+        {"source": "http-spans", "section": "http-client-span", "quote": "url.full Required string Absolute URL describing a network resource"},
+        {"source": "http-spans", "section": "http-client-span", "quote": "server.address Required string Server domain name"},
+        {"source": "http-spans", "section": "http-client-span", "quote": "server.port Required int Server port number."}
+      ]
+    },
+    {
+      "proposition": "Add `http.response.status_code` if and only if a response status was received.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-client-span", "quote": "http.response.status_code Conditionally Required If and only if one was received/sent."}
+      ]
+    },
+    {
+      "proposition": "Preserve the path and query in the complete URL, while applying the documented redaction rules if credentials or sensitive content are present.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-client-span", "quote": "URL usually has scheme://host[:port][path][?query][#fragment] format"},
+        {"source": "http-spans", "section": "http-client-span", "quote": "url.full MUST NOT contain credentials passed via URL"},
+        {"source": "http-spans", "section": "http-client-span", "quote": "Sensitive content provided in url.full SHOULD be scrubbed"}
+      ]
+    },
+    {
+      "proposition": "Do not mix these current names with the historical `http.method`, `http.status_code`, `http.url`, `net.peer.name`, or `net.peer.port` attributes.",
+      "supported_by": [
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.method → http.request.method"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.status_code → http.response.status_code"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.url → url.full"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "net.peer.name → server.address"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "net.peer.port → server.port"}
+      ]
+    }
+  ]
+}

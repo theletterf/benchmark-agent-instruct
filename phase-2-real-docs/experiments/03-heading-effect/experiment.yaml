@@ -1,0 +1,10 @@
+id: 3
+name: heading-effect
+phase_1_analogue: heading effect
+research_question: Does a heading change current-pattern selection once the recommendation is isolated?
+independent_variable: heading presence
+conditions:
+  A: heading
+  B: no heading
+primary_metric: current
+default_runs: 3
