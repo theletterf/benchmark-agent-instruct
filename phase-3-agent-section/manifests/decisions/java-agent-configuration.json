@@ -1,0 +1,10 @@
+{
+  "task": "java-agent-configuration",
+  "decisions": [
+    {"id": "exporter-protocol", "kind": "scalar", "path": ["exporter_protocol"], "current": ["http/protobuf"], "historical": ["grpc"]},
+    {"id": "effective-service-name", "kind": "scalar", "path": ["effective_service_name"], "current": ["checkout"], "historical": ["cart"]},
+    {"id": "trace-exporter", "kind": "scalar", "path": ["traces_exporter"], "current": ["otlp"], "historical": []},
+    {"id": "propagators", "kind": "scalar", "path": ["propagators"], "current": ["tracecontext,baggage", ["tracecontext", "baggage"]], "historical": []},
+    {"id": "trace-sampler", "kind": "scalar", "path": ["traces_sampler"], "current": ["parentbased_always_on"], "historical": []}
+  ]
+}

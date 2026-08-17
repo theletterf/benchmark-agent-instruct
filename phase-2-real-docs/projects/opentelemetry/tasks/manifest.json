@@ -1,0 +1,11 @@
+{
+  "frozen_task_set_status": "candidate; do not freeze for the nine-experiment battery until two-stage calibration passes",
+  "primary_metric": "decision-level currentness",
+  "tasks": [
+    {"id":"http-client-span","title":"HTTP client span attributes","decision_count":4,"scoring_manifest":"../scoring/decision-manifests.json"},
+    {"id":"http-server-span","title":"HTTP server span attributes","decision_count":4,"scoring_manifest":"../scoring/decision-manifests.json"},
+    {"id":"http-client-duration","title":"HTTP client duration metric","decision_count":2,"scoring_manifest":"../scoring/decision-manifests.json"},
+    {"id":"database-client-span","title":"Database client span attributes","decision_count":5,"scoring_manifest":"../scoring/decision-manifests.json"},
+    {"id":"java-agent-configuration","title":"Java agent OTLP and service configuration","decision_count":2,"scoring_manifest":"../scoring/decision-manifests.json"}
+  ]
+}

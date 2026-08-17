@@ -1,0 +1,1 @@
+{"span_kind":"CLIENT","attributes":{"http.request.method":"POST","http.method":"POST","http.response.status_code":201,"url.full":"https://shop.example:8443/orders/42?view=full","server.address":"shop.example","server.port":8443}}

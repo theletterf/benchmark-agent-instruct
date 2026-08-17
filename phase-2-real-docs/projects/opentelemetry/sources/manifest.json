@@ -1,0 +1,29 @@
+{
+  "project": "opentelemetry",
+  "documentation_snapshot_version": "OpenTelemetry documentation site snapshot 2026-08-17",
+  "semantic_conventions_version": "1.59.0 (referenced by frozen current specification pages)",
+  "retrieval_date": "2026-08-17",
+  "sources": [
+    {
+      "id": "http-spans", "title": "Semantic conventions for HTTP spans", "url": "https://opentelemetry.io/docs/specs/semconv/http/http-spans/", "retrieval_date": "2026-08-17", "snapshot": "current/http-spans.html", "spec_version": "1.59.0", "git_commit": null, "sha256": "6a2ac776ebe103247385879599a3da16171e2fe76ce4a667e8f1cd81f6b8a3cc"
+    },
+    {
+      "id": "http-metrics", "title": "Semantic conventions for HTTP metrics", "url": "https://opentelemetry.io/docs/specs/semconv/http/http-metrics/", "retrieval_date": "2026-08-17", "snapshot": "current/http-metrics.html", "spec_version": "1.59.0", "git_commit": null, "sha256": "d4895108114f2b7d5da56c855c8069aa3826e675e77acda2c77caee32a913a06"
+    },
+    {
+      "id": "database-spans", "title": "Semantic conventions for database client spans", "url": "https://opentelemetry.io/docs/specs/semconv/db/database-spans/", "retrieval_date": "2026-08-17", "snapshot": "current/database-spans.html", "spec_version": "1.59.0", "git_commit": null, "sha256": "85da08f566f6708b3c1af50528873dac9cc2013cd700751154b2c518de69dca5"
+    },
+    {
+      "id": "http-migration", "title": "HTTP semantic convention stability migration", "url": "https://opentelemetry.io/docs/specs/semconv/non-normative/http-migration/", "retrieval_date": "2026-08-17", "snapshot": "migration/http-migration.html", "spec_version": "HTTP stable migration v1.23.1", "git_commit": null, "sha256": "e8fce2b201d86c461df76dd0e8b07bb98cbe0800efbc38a4845a415cea5f776d"
+    },
+    {
+      "id": "database-migration", "title": "Database semantic convention stability migration guide", "url": "https://opentelemetry.io/docs/specs/semconv/non-normative/db-migration/", "retrieval_date": "2026-08-17", "snapshot": "migration/database-migration.html", "spec_version": "database stable migration v1.33.0", "git_commit": null, "sha256": "268d3455eb51799737e873bd38b1c09896af083abc5e7ca89569dd36108f5698"
+    },
+    {
+      "id": "java-agent-configuration", "title": "Java agent configuration", "url": "https://opentelemetry.io/docs/zero-code/java/agent/configuration/", "retrieval_date": "2026-08-17", "snapshot": "current/java-agent-configuration.html", "spec_version": "Java agent 2.x", "git_commit": "5d68eec62bc16a5558678eae6d2f8c5083113823", "sha256": "2bf65612a84c78e14a9468423cd4634719331bdfcbd4ae2d168a6771ebb6583f"
+    },
+    {
+      "id": "sdk-environment-variables", "title": "SDK environment variables", "url": "https://opentelemetry.io/docs/specs/otel/configuration/sdk-environment-variables/", "retrieval_date": "2026-08-17", "snapshot": "current/sdk-environment-variables.html", "spec_version": "OpenTelemetry specification documentation snapshot", "git_commit": null, "sha256": "d5a976c31b1273aac5f8ad070764a5a482fa8d3d566fe9547c3d149e91313882"
+    }
+  ]
+}

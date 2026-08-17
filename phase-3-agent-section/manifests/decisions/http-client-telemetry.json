@@ -1,0 +1,11 @@
+{
+  "task": "http-client-telemetry",
+  "decisions": [
+    {"id": "span-kind", "kind": "scalar", "path": ["span_kind"], "current": ["CLIENT"], "historical": []},
+    {"id": "request-method", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["http.request.method"], "historical_keys": ["http.method"], "expected": ["POST"]},
+    {"id": "response-status", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["http.response.status_code"], "historical_keys": ["http.status_code"], "expected": [201, "201"]},
+    {"id": "complete-url", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["url.full"], "historical_keys": ["http.url"], "expected": ["https://shop.example:8443/orders/42?view=full"]},
+    {"id": "server-address", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["server.address"], "historical_keys": ["net.peer.name"], "expected": ["shop.example"]},
+    {"id": "server-port", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["server.port"], "historical_keys": ["net.peer.port"], "expected": [8443, "8443"]}
+  ]
+}

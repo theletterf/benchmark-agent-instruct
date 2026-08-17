@@ -1,0 +1,104 @@
+{
+  "phase": 2,
+  "project": "sqlalchemy",
+  "sqlalchemy_version": "2.0.52",
+  "experiment": 2,
+  "experiment_name": "structural-isolation",
+  "generation_timestamp": "2026-08-17T08:56:38.865540+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "source_manifest_sha256": "ca1ce87a79d4ec051fa11298d953e37365056c83cf23e58f576caa535e444d63",
+  "task_sha256": {
+    "primary-key-lookup": "afe763112d340ce3f0fe409ba3136e90b1b54a0a0e476e7b491cc49f3ef191b7",
+    "retrieve-all": "3200aae6600fc7cd9d36c09cef7dc3742d1462d99a528605ebdaf336ef26fe0e",
+    "filter-one": "9aab4fe8e4755663a8033d023b0c474915d39fee1dfee5b1f8ca5db91396d749",
+    "first-matching": "280f42482fdebb0452c6527c6d77b82c47350538bfb3393de0c54c639900a170",
+    "join-filter": "c90f2fe0fe6e769686d46c716d446c026a6472d13259563fef30e3660e597f1d"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "primary-key-lookup": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/primary-key-lookup/A.md",
+        "sha256": "64d1a6a7d70159b400ad57e6b220a4342609326dcb52d10d2268c0b8144f5c66",
+        "characters": 532,
+        "words": 76,
+        "approx_tokens": 133
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/primary-key-lookup/B.md",
+        "sha256": "c5f9dd39e36e12c562fae9a2b039280a5d8d983bc18d74e908aacf88cb3ee024",
+        "characters": 530,
+        "words": 76,
+        "approx_tokens": 133
+      }
+    },
+    "retrieve-all": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/retrieve-all/A.md",
+        "sha256": "c63701e5077ffd280699e4a3138c114dcea77038ebbfa25138ce7c5134009ddc",
+        "characters": 719,
+        "words": 93,
+        "approx_tokens": 180
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/retrieve-all/B.md",
+        "sha256": "eabe8c41476578ff56c9708ad100c3b366cd47681af5009086619f4c28cc12ee",
+        "characters": 717,
+        "words": 93,
+        "approx_tokens": 180
+      }
+    },
+    "filter-one": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/filter-one/A.md",
+        "sha256": "1f9adfc68259d18915c75409ac27c74f7a5080d4f16a200ff2eecb8316e2f501",
+        "characters": 753,
+        "words": 103,
+        "approx_tokens": 189
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/filter-one/B.md",
+        "sha256": "53ff47c16883a6edcf0234abe2d4b60adfe6e6adc04264e9e5c46b616a915880",
+        "characters": 751,
+        "words": 103,
+        "approx_tokens": 188
+      }
+    },
+    "first-matching": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/first-matching/A.md",
+        "sha256": "b0a21e0352cef9d21c558e88aac87eb0efd0c720cd3e6c0531ddfa43d4709428",
+        "characters": 608,
+        "words": 78,
+        "approx_tokens": 152
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/first-matching/B.md",
+        "sha256": "1b3355eef69716303d7ee56fcde19cb70a29dbae010647a18199f94afdbb1a40",
+        "characters": 606,
+        "words": 78,
+        "approx_tokens": 152
+      }
+    },
+    "join-filter": {
+      "A": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/join-filter/A.md",
+        "sha256": "48d81e8bce7d3dd2e6d1b8529fc03c323b1605467e4fd4449d4f98ac4a7fd09e",
+        "characters": 619,
+        "words": 76,
+        "approx_tokens": 155
+      },
+      "B": {
+        "path": "phase-2-real-docs/projects/sqlalchemy/artifacts/02-structural-isolation/join-filter/B.md",
+        "sha256": "13e816e7255fa43de8092bc0eacabb5f8e3c364ca7bacdd1c744a75ae0ce94f3",
+        "characters": 617,
+        "words": 76,
+        "approx_tokens": 155
+      }
+    }
+  },
+  "proposition_manifests": null
+}

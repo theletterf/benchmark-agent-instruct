@@ -1,0 +1,15 @@
+--- normal/http-client-duration.md
++++ for-agents/http-client-duration.md
+@@ -6,6 +6,12 @@
+ - Semantic conventions for HTTP metrics — https://opentelemetry.io/docs/specs/semconv/http/http-metrics/ (Semantic conventions 1.44.0; references OpenTelemetry specification 1.59.0, retrieved 2026-08-17)
+ - HTTP semantic convention stability migration — https://opentelemetry.io/docs/specs/semconv/non-normative/http-migration/ (Stable HTTP migration from semantic conventions 1.23.1, retrieved 2026-08-17)
+ 
++
++<!-- phase-3-for-agents:start -->
++## For agents
++
++For the current standard HTTP client request-duration metric, create a `Histogram` named `http.client.request.duration` with unit `s`. Record `http.request.method` and `server.address` as required attributes, using the values for the operation being measured. The server address is the domain name when it is available without a reverse DNS lookup; otherwise use the available IP address or UNIX domain socket name. Do not emit the historical `http.client.duration` metric, use milliseconds, or fall back to the older `http.method` and `net.peer.name` attribute names. The request-body and response-body size metrics documented alongside it are separate instruments, not substitutes for request duration.
++<!-- phase-3-for-agents:end -->
+ ---
+ 
+ <!-- source: http-metrics#__intro__ -->

@@ -1,0 +1,33 @@
+{
+  "primary_metric": "decision-level currentness",
+  "response_metrics": ["fully_current_response_rate", "mixed_response_rate"],
+  "tasks": {
+    "http-client-span": [
+      {"decision":"http-method-attribute","current":["http.request.method"],"historical":["http.method"],"requirement":"Required","source":"http-migration"},
+      {"decision":"http-status-attribute","current":["http.response.status_code"],"historical":["http.status_code"],"requirement":"Conditionally Required","condition":"when response status is received","source":"http-migration"},
+      {"decision":"http-url-attribute","current":["url.full"],"historical":["http.url"],"requirement":"Required","source":"http-migration"},
+      {"decision":"http-server-address-attribute","current":["server.address"],"historical":["net.peer.name"],"requirement":"Required","source":"http-migration"}
+    ],
+    "http-server-span": [
+      {"decision":"http-server-method","current":["http.request.method"],"historical":["http.method"],"requirement":"Required","source":"http-migration"},
+      {"decision":"http-server-status","current":["http.response.status_code"],"historical":["http.status_code"],"requirement":"Conditionally Required","condition":"when response status is sent","source":"http-migration"},
+      {"decision":"http-server-path","current":["url.path"],"historical":["http.target"],"requirement":"Required","source":"http-migration"},
+      {"decision":"http-server-scheme","current":["url.scheme"],"historical":["http.scheme"],"requirement":"Required","source":"http-migration"}
+    ],
+    "http-client-duration": [
+      {"decision":"http-client-duration-metric","current":["http.client.request.duration"],"historical":["http.client.duration"],"requirement":"Recommended","source":"http-migration"},
+      {"decision":"http-client-duration-unit","current":["unit: s"],"historical":["unit: ms"],"requirement":"Required","source":"http-migration"}
+    ],
+    "database-client-span": [
+      {"decision":"db-system-name","current":["db.system.name"],"historical":["db.system"],"requirement":"Required","source":"database-migration"},
+      {"decision":"db-namespace","current":["db.namespace"],"historical":["db.name"],"requirement":"Conditionally Required","condition":"if available","source":"database-migration"},
+      {"decision":"db-query-text","current":["db.query.text"],"historical":["db.statement"],"requirement":"Opt-In","condition":"only when sanitized","source":"database-migration"},
+      {"decision":"db-operation-name","current":["db.operation.name"],"historical":["db.operation"],"requirement":"Recommended","source":"database-migration"},
+      {"decision":"db-collection-name","current":["db.collection.name"],"historical":["db.sql.table"],"requirement":"Conditionally Required","source":"database-migration"}
+    ],
+    "java-agent-configuration": [
+      {"decision":"java-agent-otlp-protocol","current":["http/protobuf"],"historical":["grpc"],"requirement":"Default","condition":"when unset for Java agent 2.x","source":"java-agent-configuration"},
+      {"decision":"service-name-precedence","current":["service.name: checkout","effective_service_name: checkout"],"historical":["service.name: cart","effective_service_name: cart"],"requirement":"Precedence","source":"sdk-environment-variables"}
+    ]
+  }
+}

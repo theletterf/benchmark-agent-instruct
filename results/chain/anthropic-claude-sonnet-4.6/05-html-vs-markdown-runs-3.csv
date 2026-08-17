@@ -1,0 +1,13 @@
+model,world,condition,n,world_correct_count,world_correct_pct,preferred_path_count,preferred_path_pct,preferred_wilson_low,preferred_wilson_high,alternative_path_count,alternative_path_pct,mixed_path_count,mixed_path_pct,invalid_answer_count,invalid_answer_pct,sequence_correct_count,sequence_correct_pct,mean_prompt_tokens,mean_completion_tokens,mean_latency_ms,total_cost_usd
+anthropic/claude-sonnet-4.6,ALL,A,15,15,100.0,15,100.0,79.61,100,0,0.0,0,0.0,0,0.0,15,100.0,304.8,47.667,1725.639,0.024441
+anthropic/claude-sonnet-4.6,ALL,B,15,15,100.0,15,100.0,79.61,100,0,0.0,0,0.0,0,0.0,15,100.0,249.8,43.4,1709.743,0.021006
+anthropic/claude-sonnet-4.6,bellwater,A,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,301.0,48.0,1889.723,0.004869
+anthropic/claude-sonnet-4.6,bellwater,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,246.0,43.0,1542.183,0.004149
+anthropic/claude-sonnet-4.6,lantern,A,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,311.0,54.0,1832.29,0.005229
+anthropic/claude-sonnet-4.6,lantern,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,256.0,45.0,1682.437,0.004329
+anthropic/claude-sonnet-4.6,messenger,A,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,300.0,44.333,1709.18,0.004695
+anthropic/claude-sonnet-4.6,messenger,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,245.0,44.0,1594.233,0.004185
+anthropic/claude-sonnet-4.6,orchard,A,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,311.0,46.333,1627.047,0.004884
+anthropic/claude-sonnet-4.6,orchard,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,256.0,43.0,1985.287,0.004239
+anthropic/claude-sonnet-4.6,well,A,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,301.0,45.667,1569.953,0.004764
+anthropic/claude-sonnet-4.6,well,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,246.0,42.0,1744.577,0.004104

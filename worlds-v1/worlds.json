@@ -1,0 +1,131 @@
+{
+  "version": "worlds-v1",
+  "frozen": true,
+  "worlds": [
+    {
+      "id": "bellwater",
+      "title": "Entering Bellwater",
+      "place": "Bellwater",
+      "character": "Mara",
+      "goal": "enter Bellwater",
+      "preferred_path": "path_b",
+      "path_a": {
+        "label": "stone custom",
+        "steps": [
+          {"id": "stone_bridge", "key": "stone bridge", "text": "Cross the stone bridge at dusk."},
+          {"id": "copper_coin", "key": "copper coin", "text": "Give a copper coin to the gatekeeper."},
+          {"id": "oak_gate", "key": "oak gate", "text": "Enter through the oak gate."}
+        ]
+      },
+      "path_b": {
+        "label": "reed custom",
+        "steps": [
+          {"id": "reed_bridge", "key": "reed bridge", "text": "Cross the reed bridge at dawn."},
+          {"id": "rosemary", "key": "rosemary", "text": "Give rosemary to the miller."},
+          {"id": "blue_gate", "key": "blue gate", "text": "Enter through the blue gate."}
+        ]
+      },
+      "context_topics": ["calendar keeping", "market stalls", "river surveys", "roof repairs", "public gardens", "school records"]
+    },
+    {
+      "id": "lantern",
+      "title": "Lighting the Festival Lantern",
+      "place": "the Lantern Festival",
+      "character": "Sela",
+      "goal": "light the ceremonial lantern",
+      "preferred_path": "path_a",
+      "path_a": {
+        "label": "cedar custom",
+        "steps": [
+          {"id": "cedar_taper", "key": "cedar taper", "text": "Take the cedar taper."},
+          {"id": "bronze_brazier", "key": "bronze brazier", "text": "Place it in the bronze brazier."},
+          {"id": "western_arch", "key": "western arch", "text": "Carry the flame to the western arch."}
+        ]
+      },
+      "path_b": {
+        "label": "wax custom",
+        "steps": [
+          {"id": "wax_wick", "key": "wax wick", "text": "Take the wax wick."},
+          {"id": "glass_holder", "key": "glass flame-holder", "text": "Place it in the glass flame-holder."},
+          {"id": "eastern_arch", "key": "eastern arch", "text": "Carry the flame to the eastern arch."}
+        ]
+      },
+      "context_topics": ["musical rehearsals", "banner storage", "guest ledgers", "courtyard tiles", "meal schedules", "costume inventories"]
+    },
+    {
+      "id": "messenger",
+      "title": "Delivering to the Messenger Tower",
+      "place": "the Messenger Tower",
+      "character": "Iven",
+      "goal": "deliver the sealed letter",
+      "preferred_path": "path_b",
+      "path_a": {
+        "label": "river custom",
+        "steps": [
+          {"id": "river_road", "key": "river road", "text": "Follow the river road."},
+          {"id": "red_seal", "key": "red seal", "text": "Mark the letter with a red seal."},
+          {"id": "north_tower", "key": "north tower", "text": "Deliver it to the north tower."}
+        ]
+      },
+      "path_b": {
+        "label": "forest custom",
+        "steps": [
+          {"id": "forest_road", "key": "forest road", "text": "Follow the forest road."},
+          {"id": "white_ribbon", "key": "white ribbon", "text": "Tie a white ribbon around the letter."},
+          {"id": "garden_tower", "key": "garden tower", "text": "Deliver it to the garden tower."}
+        ]
+      },
+      "context_topics": ["archive shelves", "courier uniforms", "clock maintenance", "visitor badges", "window cleaning", "garden records"]
+    },
+    {
+      "id": "orchard",
+      "title": "Harvesting the Ceremonial Pear",
+      "place": "the Orchard of Orra",
+      "character": "Tavi",
+      "goal": "harvest the ceremonial pear",
+      "preferred_path": "path_a",
+      "path_a": {
+        "label": "eastern custom",
+        "steps": [
+          {"id": "eastern_ladder", "key": "eastern ladder", "text": "Climb the eastern ladder."},
+          {"id": "silver_basket", "key": "silver basket", "text": "Place the pear in the silver basket."},
+          {"id": "noon_bell", "key": "noon bell", "text": "Wait for the noon bell."}
+        ]
+      },
+      "path_b": {
+        "label": "western custom",
+        "steps": [
+          {"id": "western_ladder", "key": "western ladder", "text": "Climb the western ladder."},
+          {"id": "linen_sling", "key": "linen sling", "text": "Catch the pear in the linen sling."},
+          {"id": "evening_whistle", "key": "evening whistle", "text": "Listen for the evening whistle."}
+        ]
+      },
+      "context_topics": ["tree census", "tool sheds", "picnic permits", "rain gauges", "boundary stones", "seed catalogues"]
+    },
+    {
+      "id": "well",
+      "title": "Drawing Water at the Well of Vey",
+      "place": "the Well of Vey",
+      "character": "Nera",
+      "goal": "draw the ritual water",
+      "preferred_path": "path_b",
+      "path_a": {
+        "label": "iron custom",
+        "steps": [
+          {"id": "iron_bucket", "key": "iron bucket", "text": "Use the iron bucket."},
+          {"id": "three_turns", "key": "three turns", "text": "Make three turns of the handle."},
+          {"id": "black_basin", "key": "black basin", "text": "Pour the water into the black basin."}
+        ]
+      },
+      "path_b": {
+        "label": "clay custom",
+        "steps": [
+          {"id": "clay_jar", "key": "clay jar", "text": "Use the clay jar."},
+          {"id": "five_turns", "key": "five turns", "text": "Make five turns of the handle."},
+          {"id": "white_basin", "key": "white basin", "text": "Pour the water into the white basin."}
+        ]
+      },
+      "context_topics": ["plaza paving", "public notices", "weather logs", "bench repairs", "festival accounts", "library hours"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+id: 1
+name: recommendation-presence
+research_question: >
+  Does adding an explicit recommendation change which of two otherwise valid procedures the model selects?
+independent_variable: recommendation presence
+conditions:
+  A: neutral
+  B: recommendation present
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

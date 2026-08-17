@@ -1,0 +1,10 @@
+id: 8
+name: context-dilution
+phase_1_analogue: context dilution
+research_question: Does the recommendation remain effective with substantially more official context?
+independent_variable: official context breadth
+conditions:
+  A: focused retrieval
+  B: broad retrieval
+primary_metric: current
+default_runs: 3

@@ -1,9 +1,6 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
-results/*.jsonl
-results/*.csv
-results/*.md
 .venv/
 venv/
 .env

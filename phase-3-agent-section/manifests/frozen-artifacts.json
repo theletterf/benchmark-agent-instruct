@@ -1,0 +1,80 @@
+{
+  "project": "opentelemetry",
+  "tasks": [
+    {
+      "task": "http-client-telemetry",
+      "task_sha256": "ac20fc4893ef31b30582bc4035b8cccc816569c5b89e630171ec909d3da14b72",
+      "normal_sha256": "c862c783d2d04ea64dbae1e6007eb18baaf37d66f6a6feb41b432b1dc74cee7d",
+      "for_agents_sha256": "40cdd6950f780d5686030280a2f920de3ec508ef6465c23dfd3f13aab654811c",
+      "shared_documentation_sha256": "c862c783d2d04ea64dbae1e6007eb18baaf37d66f6a6feb41b432b1dc74cee7d",
+      "agent_section_sha256": "d35177bee5d0f36f63153ad02c73e3fe8928f6b5f3f2a4f0a53631df5155aae2",
+      "diff_sha256": "22c1243c670e3f6eed62acc156f546505b5a79c97ac0aef59e8dc5dd72425079",
+      "tokens": {
+        "normal_documentation_tokens": 7897,
+        "agent_section_tokens": 150,
+        "treatment_tokens": 8063,
+        "percentage_context_increase": 2.1
+      }
+    },
+    {
+      "task": "http-server-telemetry",
+      "task_sha256": "9e206215e8b6820785f08ab63261d454d6359ffa6c09cbcc3e44356fd48a41eb",
+      "normal_sha256": "f44924075319d211d7e766763e4aadc71460ab0bb5d448e3097a820dc50ba968",
+      "for_agents_sha256": "bf2280d7d006d46805c6aebf95fb477a0cdd8786bb86ca95d43f68b7dca9f4d9",
+      "shared_documentation_sha256": "f44924075319d211d7e766763e4aadc71460ab0bb5d448e3097a820dc50ba968",
+      "agent_section_sha256": "fd79d7a435ff18036b774ff71374e2266cca11a70c29385bcda05437f1c717ae",
+      "diff_sha256": "ec23d7ea6693c38b892ec27ad1a8d1edd672710dbc6c5103e13aafa1a3a91917",
+      "tokens": {
+        "normal_documentation_tokens": 8003,
+        "agent_section_tokens": 154,
+        "treatment_tokens": 8173,
+        "percentage_context_increase": 2.12
+      }
+    },
+    {
+      "task": "http-client-duration",
+      "task_sha256": "ed54dfc1f0dcbda49a1b6306f6c3037799e235402909254e2f2e4a83d409dd4c",
+      "normal_sha256": "6f9295752761903a695a70edf9608243a143debdb6f9a65b55a4769bc067d211",
+      "for_agents_sha256": "d3c8508600d7caa0847a370fae55d166ac5e76f22dae3218fbc70de4a776d638",
+      "shared_documentation_sha256": "6f9295752761903a695a70edf9608243a143debdb6f9a65b55a4769bc067d211",
+      "agent_section_sha256": "5f5e6bc3eda50aebbaa588a5ecbf94b08f78114f450531e6c80364736e525b70",
+      "diff_sha256": "b2cbaf3af50777aaa34b9dbc41e5f8808ce032193ade0a91daa48c47f1c7d962",
+      "tokens": {
+        "normal_documentation_tokens": 10216,
+        "agent_section_tokens": 180,
+        "treatment_tokens": 10413,
+        "percentage_context_increase": 1.93
+      }
+    },
+    {
+      "task": "database-client-telemetry",
+      "task_sha256": "fd056f604f96a70aae8f5a49738911eaaf324fb1ef5d4ca78040274388c8ee57",
+      "normal_sha256": "f863e02a9e30767fdb5d65160a558403f602689ec8c5dbb2d2b7026050cdb3ed",
+      "for_agents_sha256": "287b3d9babe8dd837a05799d5bb594317b6dd571f7d352472af529439f50b0f4",
+      "shared_documentation_sha256": "f863e02a9e30767fdb5d65160a558403f602689ec8c5dbb2d2b7026050cdb3ed",
+      "agent_section_sha256": "10d7862049225167ad5e04f084d76bf9d1f79b195f9df4afe52f3f33610fe570",
+      "diff_sha256": "c555cf29f0df5db8ff52e789c66f9d172c75f61f01fd55dc3a2a0be1cb0ac766",
+      "tokens": {
+        "normal_documentation_tokens": 9113,
+        "agent_section_tokens": 158,
+        "treatment_tokens": 9287,
+        "percentage_context_increase": 1.91
+      }
+    },
+    {
+      "task": "java-agent-configuration",
+      "task_sha256": "4468dd075978a5480a3e540c7f06246f6eea07175fa03ae703f6ab5dc8020308",
+      "normal_sha256": "4ba36e4a79d3ad51d474619768dc071dc0ccb4bfc98d7ca7ddaf60c42ff99ba3",
+      "for_agents_sha256": "620d656ef9018fa9f9ce40cd7301c6cc545c020e286d6be0d124198c2315f208",
+      "shared_documentation_sha256": "4ba36e4a79d3ad51d474619768dc071dc0ccb4bfc98d7ca7ddaf60c42ff99ba3",
+      "agent_section_sha256": "37686b0f44fddc9fb96964d30a3ec9db6de193684334b39f15f8d5cbf2757a08",
+      "diff_sha256": "a50c40e444f7382446800914a04c0114c095c0f51c05b213f3dfcfe6d1034834",
+      "tokens": {
+        "normal_documentation_tokens": 2866,
+        "agent_section_tokens": 151,
+        "treatment_tokens": 3034,
+        "percentage_context_increase": 5.86
+      }
+    }
+  ]
+}

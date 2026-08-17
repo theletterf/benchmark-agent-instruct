@@ -1,0 +1,10 @@
+id: 6
+name: semantic-compression
+phase_1_analogue: semantic compression
+research_question: Can human-oriented documentation be compressed while preserving current-pattern steering?
+independent_variable: semantic compression
+conditions:
+  A: full documentation
+  B: semantically compressed Markdown
+primary_metric: current
+default_runs: 3

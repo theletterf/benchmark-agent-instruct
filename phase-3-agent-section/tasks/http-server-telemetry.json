@@ -1,0 +1,10 @@
+{
+  "id": "http-server-telemetry",
+  "title": "HTTP server request telemetry",
+  "prompt": "An HTTPS server at api.example receives GET /orders/42, matched route /orders/{orderId}, and sends status 200. Using the supplied documentation, return the current span kind and the standard attributes for request method, response status, request path, URL scheme, matched route, and server address. Return only JSON with keys span_kind and attributes.",
+  "source_sections": [
+    {"source_id": "http-spans", "sections": ["__intro__", "status", "http-server"]},
+    {"source_id": "http-migration", "sections": ["__intro__", "summary-of-changes"]}
+  ],
+  "agent_section": "For current stable HTTP server spans, use span kind `SERVER`. Record `http.request.method`, `url.path`, and `url.scheme`, and add `http.response.status_code` if and only if a response status was sent. Use `http.route` for an available matched route template; it must remain low-cardinality, and a URI path cannot substitute for it. The route is conditionally required only when it is available. Use `server.address` for the logical server host. Do not substitute the historical `http.method`, `http.status_code`, `http.target`, `http.scheme`, or `net.host.name` names for these current attributes."
+}

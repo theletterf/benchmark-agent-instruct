@@ -1,0 +1,10 @@
+{
+  "id": "database-client-telemetry",
+  "title": "Database client query telemetry",
+  "prompt": "Instrument a PostgreSQL client query against namespace shop and collection orders. The operation is SELECT and the sanitized query text is SELECT * FROM orders WHERE id = ?. Using the supplied documentation, return the current span kind and standard attributes for database system, namespace, collection, operation name, and sanitized query text. Return only JSON with keys span_kind and attributes.",
+  "source_sections": [
+    {"source_id": "database-spans", "sections": ["__intro__", "span-definition", "database-client-span-duration", "sanitization-of-dbquerytext", "generating-a-summary-of-the-query"]},
+    {"source_id": "database-migration", "sections": ["__intro__", "summary-of-changes"]}
+  ],
+  "agent_section": "For current stable database client spans, use span kind `CLIENT`. Identify the database product with `db.system.name`; use `db.namespace` and `db.collection.name` for the logical namespace and collection, and `db.operation.name` for the operation. Put query text in `db.query.text` only when the documented collection rules permit it; non-parameterized text should not be collected by default unless sanitization excludes sensitive data. Do not mix these fields with the historical `db.system`, `db.name`, `db.sql.table`, `db.operation`, or `db.statement` attributes, which the migration guide removes or renames."
+}

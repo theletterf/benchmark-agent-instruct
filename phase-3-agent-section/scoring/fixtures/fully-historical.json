@@ -1,0 +1,1 @@
+{"span_kind":"CLIENT","attributes":{"http.method":"POST","http.status_code":201,"http.url":"https://shop.example:8443/orders/42?view=full","net.peer.name":"shop.example","net.peer.port":8443}}

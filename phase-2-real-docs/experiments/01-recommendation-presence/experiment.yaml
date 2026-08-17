@@ -1,0 +1,10 @@
+id: 1
+name: recommendation-presence
+phase_1_analogue: recommendation presence
+research_question: Does adding an explicit recommendation increase current-pattern selection over official documentation alone?
+independent_variable: recommendation presence
+conditions:
+  A: official documentation
+  B: official documentation plus recommendation
+primary_metric: current
+default_runs: 3

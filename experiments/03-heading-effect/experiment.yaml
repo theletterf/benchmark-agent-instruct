@@ -1,0 +1,14 @@
+id: 3
+name: heading-effect
+research_question: >
+  Once a recommendation is isolated, does adding document hierarchy make it more influential?
+independent_variable: heading presence
+conditions:
+  A: heading
+  B: no heading
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

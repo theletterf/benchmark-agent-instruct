@@ -1,0 +1,101 @@
+{
+  "experiment": 5,
+  "experiment_name": "html-vs-markdown",
+  "world_version": "worlds-v1",
+  "generation_timestamp": "2026-08-17T07:35:17.731359+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "system_prompt_sha256": "e512dd3bf186f9dd1f898175892875f4e3857bd2672206bfc4a88e229c3a59f1",
+  "task_sha256": {
+    "bellwater": "5a12d80767a9348747e7484394af1b2487535c36325d217685f45ac2b89caf5a",
+    "lantern": "73ddae37b908547a331a40bbd8e74891dd52d8abba243ff7849303348db91b4b",
+    "messenger": "50841d1b790c3b8055de5875148e83df03f69055fceb59c0a33ac9c982e22cf5",
+    "orchard": "f78614406492d6e8c6e2060460d60e9c86304f99e7a6a3a6fbe934597287ccaa",
+    "well": "3297898892b9f6a607de61db0765724bf7ef65d9048e22934e7c8c88477675c8"
+  },
+  "model_parameters": {
+    "temperature": 0.0
+  },
+  "artifacts": {
+    "bellwater": {
+      "A": {
+        "path": "experiments/05-html-vs-markdown/artifacts/bellwater/A.html",
+        "sha256": "d3e2107d4da41fc84d1d17488bedb398bb916e1071db2d2cf9124188f8655c3a",
+        "characters": 847,
+        "words": 125,
+        "approx_tokens": 212
+      },
+      "B": {
+        "path": "experiments/05-html-vs-markdown/artifacts/bellwater/B.md",
+        "sha256": "937e54a2767db46686bda1dec47ea1ad5edafee14507fa838eaf1e2e5d370097",
+        "characters": 763,
+        "words": 125,
+        "approx_tokens": 191
+      }
+    },
+    "lantern": {
+      "A": {
+        "path": "experiments/05-html-vs-markdown/artifacts/lantern/A.html",
+        "sha256": "13f7503f1691a89a8dd4b8aad19cc1bdfa744e121e29002e1156fa9e927afa36",
+        "characters": 880,
+        "words": 132,
+        "approx_tokens": 220
+      },
+      "B": {
+        "path": "experiments/05-html-vs-markdown/artifacts/lantern/B.md",
+        "sha256": "d97e46800fa28f12c7bd73c694bbdbcc2496afc310dcaff5a15bfe02150d68de",
+        "characters": 796,
+        "words": 132,
+        "approx_tokens": 199
+      }
+    },
+    "messenger": {
+      "A": {
+        "path": "experiments/05-html-vs-markdown/artifacts/messenger/A.html",
+        "sha256": "7670cf6d6867702457945b3ebebcaa82f03c4bac9a4eea0923680e0d31ac9ef9",
+        "characters": 885,
+        "words": 133,
+        "approx_tokens": 222
+      },
+      "B": {
+        "path": "experiments/05-html-vs-markdown/artifacts/messenger/B.md",
+        "sha256": "dd853b0e8f5d688d9b4b80ea893fec922af8b27f413a8b445278aa0fa611e0fe",
+        "characters": 801,
+        "words": 133,
+        "approx_tokens": 201
+      }
+    },
+    "orchard": {
+      "A": {
+        "path": "experiments/05-html-vs-markdown/artifacts/orchard/A.html",
+        "sha256": "e6b4c31299fbdaa97018625c6e807f760782dc8c360838c48cd926e90d3c8513",
+        "characters": 880,
+        "words": 130,
+        "approx_tokens": 220
+      },
+      "B": {
+        "path": "experiments/05-html-vs-markdown/artifacts/orchard/B.md",
+        "sha256": "17cd88e7c2971500291cbbd448367214e4fce0146445ec7451a8173988bb1dfe",
+        "characters": 796,
+        "words": 130,
+        "approx_tokens": 199
+      }
+    },
+    "well": {
+      "A": {
+        "path": "experiments/05-html-vs-markdown/artifacts/well/A.html",
+        "sha256": "7b71265e310663b98a7dea6253c12e8d37f4dffcdd07046647ed3444a8f806a8",
+        "characters": 858,
+        "words": 136,
+        "approx_tokens": 215
+      },
+      "B": {
+        "path": "experiments/05-html-vs-markdown/artifacts/well/B.md",
+        "sha256": "53d8759610278c8dfc92ec68ff6371a12e32e1959f06d6b1c8baea0dde5fde29",
+        "characters": 774,
+        "words": 136,
+        "approx_tokens": 194
+      }
+    }
+  },
+  "proposition_manifests": null
+}

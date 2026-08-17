@@ -1,0 +1,14 @@
+id: 4
+name: ai-audience-targeting
+research_question: >
+  Does explicitly addressing AI agents and LLMs give an instruction additional weight?
+independent_variable: audience label
+conditions:
+  A: AI-targeted heading
+  B: generic heading
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

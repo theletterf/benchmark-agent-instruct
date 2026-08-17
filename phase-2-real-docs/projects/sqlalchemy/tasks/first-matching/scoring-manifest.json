@@ -1,0 +1,20 @@
+{
+  "task": "first-matching",
+  "function": "def find_first_user_with_prefix(session, prefix):",
+  "current_patterns": [
+    "select",
+    "Session.scalars",
+    "Select.limit",
+    "Result.first"
+  ],
+  "legacy_patterns": [
+    "Session.query",
+    "Query.first"
+  ],
+  "required_behavior": [
+    "Return the first User ordered by User.id whose name begins with prefix.",
+    "Return None when no User matches."
+  ],
+  "current_reference": "def find_first_user_with_prefix(session, prefix):\n    stmt = select(User).where(User.name.startswith(prefix)).order_by(User.id).limit(1)\n    return session.scalars(stmt).first()",
+  "legacy_reference": "def find_first_user_with_prefix(session, prefix):\n    return session.query(User).filter(User.name.startswith(prefix)).order_by(User.id).first()"
+}

@@ -1,0 +1,119 @@
+{
+  "world_version": "worlds-v1",
+  "frozen": true,
+  "generation_timestamp": "2026-08-17T07:35:17.731359+00:00",
+  "benchmark_commit": "217d7a890d96f0d6d4d092898260a469ba97de02",
+  "source_sha256": "feeff0e4c12599c13cba00468522bf578a46d68c44ef4d997fe1be0a12a4cb04",
+  "worlds": {
+    "bellwater": {
+      "preferred_path": "path_b",
+      "task_sha256": "5a12d80767a9348747e7484394af1b2487535c36325d217685f45ac2b89caf5a",
+      "propositions": {
+        "paths": {
+          "path_a": [
+            "stone bridge",
+            "copper coin",
+            "oak gate"
+          ],
+          "path_b": [
+            "reed bridge",
+            "rosemary",
+            "blue gate"
+          ]
+        },
+        "recommendation": {
+          "preferred": "path_b",
+          "do_not_mix": true
+        }
+      }
+    },
+    "lantern": {
+      "preferred_path": "path_a",
+      "task_sha256": "73ddae37b908547a331a40bbd8e74891dd52d8abba243ff7849303348db91b4b",
+      "propositions": {
+        "paths": {
+          "path_a": [
+            "cedar taper",
+            "bronze brazier",
+            "western arch"
+          ],
+          "path_b": [
+            "wax wick",
+            "glass flame-holder",
+            "eastern arch"
+          ]
+        },
+        "recommendation": {
+          "preferred": "path_a",
+          "do_not_mix": true
+        }
+      }
+    },
+    "messenger": {
+      "preferred_path": "path_b",
+      "task_sha256": "50841d1b790c3b8055de5875148e83df03f69055fceb59c0a33ac9c982e22cf5",
+      "propositions": {
+        "paths": {
+          "path_a": [
+            "river road",
+            "red seal",
+            "north tower"
+          ],
+          "path_b": [
+            "forest road",
+            "white ribbon",
+            "garden tower"
+          ]
+        },
+        "recommendation": {
+          "preferred": "path_b",
+          "do_not_mix": true
+        }
+      }
+    },
+    "orchard": {
+      "preferred_path": "path_a",
+      "task_sha256": "f78614406492d6e8c6e2060460d60e9c86304f99e7a6a3a6fbe934597287ccaa",
+      "propositions": {
+        "paths": {
+          "path_a": [
+            "eastern ladder",
+            "silver basket",
+            "noon bell"
+          ],
+          "path_b": [
+            "western ladder",
+            "linen sling",
+            "evening whistle"
+          ]
+        },
+        "recommendation": {
+          "preferred": "path_a",
+          "do_not_mix": true
+        }
+      }
+    },
+    "well": {
+      "preferred_path": "path_b",
+      "task_sha256": "3297898892b9f6a607de61db0765724bf7ef65d9048e22934e7c8c88477675c8",
+      "propositions": {
+        "paths": {
+          "path_a": [
+            "iron bucket",
+            "three turns",
+            "black basin"
+          ],
+          "path_b": [
+            "clay jar",
+            "five turns",
+            "white basin"
+          ]
+        },
+        "recommendation": {
+          "preferred": "path_b",
+          "do_not_mix": true
+        }
+      }
+    }
+  }
+}

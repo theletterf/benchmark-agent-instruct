@@ -1,0 +1,10 @@
+{
+  "id": "http-client-duration",
+  "title": "HTTP client duration histogram",
+  "prompt": "Define the standard histogram for the duration of outbound HTTP client requests to shop.example using POST. Using the supplied documentation, return only JSON with metric_name, instrument, unit, and attributes. The attributes object should contain the standard request-method and server-address attributes.",
+  "source_sections": [
+    {"source_id": "http-metrics", "sections": ["__intro__", "http-client"]},
+    {"source_id": "http-migration", "sections": ["__intro__", "summary-of-changes"]}
+  ],
+  "agent_section": "For the current standard HTTP client request-duration metric, create a `Histogram` named `http.client.request.duration` with unit `s`. Record `http.request.method` and `server.address` as required attributes, using the values for the operation being measured. The server address is the domain name when it is available without a reverse DNS lookup; otherwise use the available IP address or UNIX domain socket name. Do not emit the historical `http.client.duration` metric, use milliseconds, or fall back to the older `http.method` and `net.peer.name` attribute names. The request-body and response-body size metrics documented alongside it are separate instruments, not substitutes for request duration."
+}

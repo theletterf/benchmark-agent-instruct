@@ -1,0 +1,13 @@
+model,world,condition,n,world_correct_count,world_correct_pct,preferred_path_count,preferred_path_pct,preferred_wilson_low,preferred_wilson_high,alternative_path_count,alternative_path_pct,mixed_path_count,mixed_path_pct,invalid_answer_count,invalid_answer_pct,sequence_correct_count,sequence_correct_pct,mean_prompt_tokens,mean_completion_tokens,mean_latency_ms,total_cost_usd
+google/gemini-2.5-flash-lite,ALL,A,15,15,100.0,6,40.0,19.82,64.25,9,60.0,0,0.0,0,0.0,15,100.0,174.6,28.4,656.39,0.000432
+google/gemini-2.5-flash-lite,ALL,B,15,15,100.0,15,100.0,79.61,100,0,0.0,0,0.0,0,0.0,15,100.0,226.4,27.8,659.801,0.000506
+google/gemini-2.5-flash-lite,bellwater,A,3,3,100.0,0,0.0,0,56.15,3,100.0,0,0.0,0,0.0,3,100.0,170.0,30.0,485.257,8.7e-05
+google/gemini-2.5-flash-lite,bellwater,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,221.0,27.0,869.523,9.9e-05
+google/gemini-2.5-flash-lite,lantern,A,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,176.0,29.0,800.393,8.8e-05
+google/gemini-2.5-flash-lite,lantern,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,229.0,29.0,601.99,0.000103
+google/gemini-2.5-flash-lite,messenger,A,3,3,100.0,0,0.0,0,56.15,3,100.0,0,0.0,0,0.0,3,100.0,174.0,28.0,775.3,8.6e-05
+google/gemini-2.5-flash-lite,messenger,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,226.0,28.0,415.043,0.000101
+google/gemini-2.5-flash-lite,orchard,A,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,174.0,27.0,678.167,8.5e-05
+google/gemini-2.5-flash-lite,orchard,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,225.0,27.0,935.857,0.0001
+google/gemini-2.5-flash-lite,well,A,3,3,100.0,0,0.0,0,56.15,3,100.0,0,0.0,0,0.0,3,100.0,179.0,28.0,542.833,8.7e-05
+google/gemini-2.5-flash-lite,well,B,3,3,100.0,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,100.0,231.0,28.0,476.59,0.000103

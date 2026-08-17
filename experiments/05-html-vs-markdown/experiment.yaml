@@ -1,0 +1,14 @@
+id: 5
+name: html-vs-markdown
+research_question: >
+  Does raw document representation affect compliance when textual content is equivalent?
+independent_variable: raw markup representation
+conditions:
+  A: HTML
+  B: Markdown
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

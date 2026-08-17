@@ -1,0 +1,14 @@
+id: 6
+name: semantic-compression
+research_question: >
+  Can human-oriented narrative and explanation be removed without reducing behavioral compliance?
+independent_variable: semantic compression
+conditions:
+  A: full document
+  B: semantically compressed document
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

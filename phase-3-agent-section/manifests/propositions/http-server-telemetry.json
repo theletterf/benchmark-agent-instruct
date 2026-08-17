@@ -1,0 +1,50 @@
+{
+  "task": "http-server-telemetry",
+  "agent_instructions": [
+    {
+      "proposition": "For current stable HTTP server spans, use span kind `SERVER`.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-server", "quote": "Span kind MUST be SERVER."}
+      ]
+    },
+    {
+      "proposition": "Record `http.request.method`, `url.path`, and `url.scheme`, and add `http.response.status_code` if and only if a response status was sent.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-server", "quote": "http.request.method Required string HTTP request method."},
+        {"source": "http-spans", "section": "http-server", "quote": "url.path Required string The URI path component"},
+        {"source": "http-spans", "section": "http-server", "quote": "url.scheme Required string The URI scheme component"},
+        {"source": "http-spans", "section": "http-server", "quote": "http.response.status_code Conditionally Required If and only if one was received/sent."}
+      ]
+    },
+    {
+      "proposition": "Use `http.route` for an available matched route template; it must remain low-cardinality, and a URI path cannot substitute for it.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-server", "quote": "http.route Conditionally Required If and only if it’s available"},
+        {"source": "http-spans", "section": "http-server", "quote": "This MUST be low-cardinality"},
+        {"source": "http-spans", "section": "http-server", "quote": "the URI path can NOT substitute it"}
+      ]
+    },
+    {
+      "proposition": "The route is conditionally required only when it is available.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-server", "quote": "http.route Conditionally Required If and only if it’s available"}
+      ]
+    },
+    {
+      "proposition": "Use `server.address` for the logical server host.",
+      "supported_by": [
+        {"source": "http-spans", "section": "http-server", "quote": "server.address Recommended string Name of the local HTTP server"}
+      ]
+    },
+    {
+      "proposition": "Do not substitute the historical `http.method`, `http.status_code`, `http.target`, `http.scheme`, or `net.host.name` names for these current attributes.",
+      "supported_by": [
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.method → http.request.method"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.status_code → http.response.status_code"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.target → url.path and url.query"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "http.scheme → url.scheme"},
+        {"source": "http-migration", "section": "summary-of-changes", "quote": "net.host.name → server.address"}
+      ]
+    }
+  ]
+}

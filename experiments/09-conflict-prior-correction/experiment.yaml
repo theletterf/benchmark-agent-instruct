@@ -1,0 +1,14 @@
+id: 9
+name: conflict-prior-correction
+research_question: >
+  Does structural isolation help a current recommendation override strongly established historical information?
+independent_variable: current recommendation isolation
+conditions:
+  A: isolated current recommendation
+  B: enmeshed current recommendation
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

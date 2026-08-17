@@ -1,0 +1,14 @@
+id: 7
+name: stronger-compression
+research_question: >
+  How much further can semantic compression go before behavioral performance changes?
+independent_variable: compression strength
+conditions:
+  A: moderate compression
+  B: strong compression
+primary_metric: preferred_path
+secondary_metrics:
+  - world_correct
+  - alternative_path
+  - mixed_path
+default_runs: 3

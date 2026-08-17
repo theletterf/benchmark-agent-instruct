@@ -1,0 +1,16 @@
+{
+  "phase": 3,
+  "project": "opentelemetry",
+  "title": "For agents intervention",
+  "motivation": "Previous experiments decomposed individual properties such as audience labels, isolation, headings, representation, and compression. Those experiments repeatedly hit compliance ceilings. Phase 3 returns to the practical intervention itself: does adding a dedicated agent-oriented section to an existing documentation page help?",
+  "question": "Given ordinary documentation that already contains the information needed to solve a task, does adding a concise agent-oriented summary of the important operational guidance improve task behavior?",
+  "independent_variable": "presence of a For agents section",
+  "conditions": {
+    "A": "Normal documentation",
+    "B": "Exactly the same documentation plus a concise For agents section"
+  },
+  "system_prompt": "Use the supplied documentation to complete the task.",
+  "main_design": "5 tasks x 2 conditions x 3 runs = 30 calls/model",
+  "smoke_design": "2 tasks x 2 conditions x 1 run = 4 calls/model",
+  "mechanism_decomposition": "out of scope"
+}

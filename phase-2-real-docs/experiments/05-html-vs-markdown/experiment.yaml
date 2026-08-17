@@ -1,0 +1,10 @@
+id: 5
+name: html-vs-markdown
+phase_1_analogue: HTML vs Markdown
+research_question: Does raw representation affect current-pattern selection when semantic content is equivalent?
+independent_variable: raw markup representation
+conditions:
+  A: HTML
+  B: Markdown
+primary_metric: current
+default_runs: 3

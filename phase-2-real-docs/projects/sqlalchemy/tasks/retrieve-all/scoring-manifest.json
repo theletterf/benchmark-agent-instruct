@@ -1,0 +1,18 @@
+{
+  "task": "retrieve-all",
+  "function": "def get_all_users(session):",
+  "current_patterns": [
+    "select",
+    "Session.scalars"
+  ],
+  "legacy_patterns": [
+    "Session.query",
+    "Query.all"
+  ],
+  "required_behavior": [
+    "Return all User objects.",
+    "Return them ordered by User.id."
+  ],
+  "current_reference": "def get_all_users(session):\n    return session.scalars(select(User).order_by(User.id)).all()",
+  "legacy_reference": "def get_all_users(session):\n    return session.query(User).order_by(User.id).all()"
+}

@@ -1,0 +1,15 @@
+--- normal/http-server-telemetry.md
++++ for-agents/http-server-telemetry.md
+@@ -6,6 +6,12 @@
+ - Semantic conventions for HTTP spans — https://opentelemetry.io/docs/specs/semconv/http/http-spans/ (Semantic conventions 1.44.0; references OpenTelemetry specification 1.59.0, retrieved 2026-08-17)
+ - HTTP semantic convention stability migration — https://opentelemetry.io/docs/specs/semconv/non-normative/http-migration/ (Stable HTTP migration from semantic conventions 1.23.1, retrieved 2026-08-17)
+ 
++
++<!-- phase-3-for-agents:start -->
++## For agents
++
++For current stable HTTP server spans, use span kind `SERVER`. Record `http.request.method`, `url.path`, and `url.scheme`, and add `http.response.status_code` if and only if a response status was sent. Use `http.route` for an available matched route template; it must remain low-cardinality, and a URI path cannot substitute for it. The route is conditionally required only when it is available. Use `server.address` for the logical server host. Do not substitute the historical `http.method`, `http.status_code`, `http.target`, `http.scheme`, or `net.host.name` names for these current attributes.
++<!-- phase-3-for-agents:end -->
+ ---
+ 
+ <!-- source: http-spans#__intro__ -->

@@ -1,0 +1,13 @@
+model,task,condition,n,current_count,current_pct,current_wilson_low,current_wilson_high,legacy_count,legacy_pct,mixed_count,mixed_pct,unclassified_count,unclassified_pct,syntax_success_count,runtime_success_count,functional_correct_count,mean_prompt_tokens,total_cost_usd
+anthropic/claude-sonnet-4.6,ALL,A,15,15,100.0,79.61,100,0,0.0,0,0.0,0,0.0,15,15,15,320.2,0.027009
+anthropic/claude-sonnet-4.6,ALL,B,15,15,100.0,79.61,100,0,0.0,0,0.0,0,0.0,15,14,14,261.2,0.024489
+anthropic/claude-sonnet-4.6,filter-one,A,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,318.0,0.005292
+anthropic/claude-sonnet-4.6,filter-one,B,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,259.0,0.004761
+anthropic/claude-sonnet-4.6,first-matching,A,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,341.0,0.006489
+anthropic/claude-sonnet-4.6,first-matching,B,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,282.0,0.005958
+anthropic/claude-sonnet-4.6,join-filter,A,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,348.0,0.006192
+anthropic/claude-sonnet-4.6,join-filter,B,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,2,2,289.0,0.005796
+anthropic/claude-sonnet-4.6,primary-key-lookup,A,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,299.0,0.004311
+anthropic/claude-sonnet-4.6,primary-key-lookup,B,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,240.0,0.00378
+anthropic/claude-sonnet-4.6,retrieve-all,A,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,295.0,0.004725
+anthropic/claude-sonnet-4.6,retrieve-all,B,3,3,100.0,43.85,100,0,0.0,0,0.0,0,0.0,3,3,3,236.0,0.004194

@@ -18,6 +18,7 @@ def complete(model, system, user, api_key, temperature=0.0):
             with urllib.request.urlopen(request, timeout=120) as response:
                 body = json.loads(response.read())
             body["_latency_ms"] = round((time.perf_counter() - started) * 1000, 2)
+            body["_temperature_sent"] = payload.get("temperature")
             return body
         except urllib.error.HTTPError as exc:
             if exc.code == 400 and "temperature" in payload and attempt == 0:

@@ -1,0 +1,12 @@
+{
+  "task": "http-server-telemetry",
+  "decisions": [
+    {"id": "span-kind", "kind": "scalar", "path": ["span_kind"], "current": ["SERVER"], "historical": []},
+    {"id": "request-method", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["http.request.method"], "historical_keys": ["http.method"], "expected": ["GET"]},
+    {"id": "response-status", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["http.response.status_code"], "historical_keys": ["http.status_code"], "expected": [200, "200"]},
+    {"id": "url-path", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["url.path"], "historical_keys": ["http.target"], "expected": ["/orders/42"]},
+    {"id": "url-scheme", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["url.scheme"], "historical_keys": ["http.scheme"], "expected": ["https"]},
+    {"id": "http-route", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["http.route"], "historical_keys": [], "expected": ["/orders/{orderId}"]},
+    {"id": "server-address", "kind": "mapping_key", "path": ["attributes"], "current_keys": ["server.address"], "historical_keys": ["net.host.name"], "expected": ["api.example"]}
+  ]
+}

@@ -1,0 +1,10 @@
+id: 4
+name: ai-audience-targeting
+phase_1_analogue: AI audience targeting
+research_question: Does explicitly addressing the model provide benefit in real documentation?
+independent_variable: audience label
+conditions:
+  A: AI-targeted heading
+  B: generic heading
+primary_metric: current
+default_runs: 3

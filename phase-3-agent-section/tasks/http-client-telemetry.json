@@ -1,0 +1,10 @@
+{
+  "id": "http-client-telemetry",
+  "title": "HTTP client request telemetry",
+  "prompt": "An HTTP client sends POST https://shop.example:8443/orders/42?view=full and receives status 201. Using the supplied documentation, return the current span kind and the standard attributes for request method, response status, complete URL, destination server address, and destination server port. Return only JSON with keys span_kind and attributes.",
+  "source_sections": [
+    {"source_id": "http-spans", "sections": ["__intro__", "name", "status", "http-client-span"]},
+    {"source_id": "http-migration", "sections": ["__intro__", "summary-of-changes"]}
+  ],
+  "agent_section": "For current stable HTTP client spans, use span kind `CLIENT`. Record the request method as `http.request.method`, the absolute requested URL as `url.full`, and the destination as `server.address` and `server.port`. Add `http.response.status_code` if and only if a response status was received. Preserve the path and query in the complete URL, while applying the documented redaction rules if credentials or sensitive content are present. Do not mix these current names with the historical `http.method`, `http.status_code`, `http.url`, `net.peer.name`, or `net.peer.port` attributes."
+}

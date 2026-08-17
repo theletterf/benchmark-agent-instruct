@@ -1,0 +1,18 @@
+{
+  "task": "primary-key-lookup",
+  "function": "def find_user_by_id(session, user_id):",
+  "current_patterns": [
+    "Session.get",
+    "select with Session.execute/scalars"
+  ],
+  "legacy_patterns": [
+    "Query.get",
+    "Session.query"
+  ],
+  "required_behavior": [
+    "Return the matching User.",
+    "Return None when the identifier is absent."
+  ],
+  "current_reference": "def find_user_by_id(session, user_id):\n    return session.get(User, user_id)",
+  "legacy_reference": "def find_user_by_id(session, user_id):\n    return session.query(User).get(user_id)"
+}
